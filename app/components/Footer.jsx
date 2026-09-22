@@ -20,10 +20,10 @@ const Footer = () => {
 
             {/* Social Icons */}
             <div className="flex items-center gap-3">
-              <a href=""> <Image src={insta} alt="instagram" className="h-9 w-9 object-contain"/> </a>
-              <a href="">  <Image src={X} alt="twitter" className="h-9 w-9 object-contain" /> </a>
-              <a href=""> <Image src={link}  alt="linkedin" className="h-9 w-9 object-contain"/></a>
-              <a href=""> <Image src={face} alt="facebook" className="h-9 w-9 object-contain" /></a>
+              <a href="https://www.instagram.com/toshconsult"> <Image src={insta} alt="instagram" className="h-9 w-9 object-contain"/> </a>
+              <a href="https://x.com/toshconsult">  <Image src={X} alt="twitter" className="h-9 w-9 object-contain" /> </a>
+              <a href="https://www.linkedin.com/company/toshconsult/"> <Image src={link}  alt="linkedin" className="h-9 w-9 object-contain"/></a>
+              <a href="https://web.facebook.com/toshconsult?_rdc=1&_rdr#"> <Image src={face} alt="facebook" className="h-9 w-9 object-contain" /></a>
             </div>
       </div>
 
