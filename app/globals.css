@@ -24,3 +24,445 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 1s ease-out;
+}
+
+.animate-slideUp:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.animate-slideUp:nth-child(3) {
+  animation-delay: 0.4s;
+}
+/* ============================= */
+/* PROFESSIONAL HERO ANIMATIONS  */
+/* ============================= */
+
+@keyframes heroLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px) scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes heroRight {
+  0% {
+    opacity: 0;
+    transform: translateX(80px) scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes heroText {
+  0% {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes logoReveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* ============================= */
+/* HERO CLASSES                  */
+/* ============================= */
+
+.hero-left {
+  opacity: 0;
+  animation:
+    heroLeft 1s cubic-bezier(0.22, 1, 0.36, 1) 0.2s forwards,
+    floating 4s ease-in-out 1.4s infinite;
+}
+
+.hero-right {
+  opacity: 0;
+  animation:
+    heroRight 1s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards,
+    floating 4s ease-in-out 1.6s infinite;
+}
+
+.hero-content {
+  animation: heroText 1s cubic-bezier(0.22, 1, 0.36, 1) 0.4s forwards;
+  opacity: 0;
+}
+
+.hero-logo {
+  animation: logoReveal 0.8s ease-out 0.6s forwards;
+  opacity: 0;
+}
+
+.hero-bottom {
+  animation: heroBottom 1s cubic-bezier(0.22, 1, 0.36, 1) 0.6s forwards;
+  opacity: 0;
+}
+
+
+/* ============================= */
+/* BUTTON                        */
+/* ============================= */
+
+.hero-button {
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+.hero-button:active {
+  transform: translateY(-1px) scale(0.97);
+}
+
+
+/* Button shine effect */
+
+.hero-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: left 0.6s ease;
+}
+
+.hero-button:hover::before {
+  left: 140%;
+}
+
+
+/* ============================= */
+/* REDUCED MOTION                */
+/* ============================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-left,
+  .hero-right,
+  .hero-content,
+  .hero-logo,
+  .hero-bottom {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+/* ============================= */
+/* TOSH CONSULT PAGE ANIMATIONS  */
+/* ============================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* ============================= */
+/* TOP BRAND SECTION             */
+/* ============================= */
+
+.brand-section {
+  animation: fadeDown 0.8s ease-out forwards;
+}
+
+.brand-image {
+  animation: scaleIn 0.9s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+
+/* ============================= */
+/* INTRO SECTION                 */
+/* ============================= */
+
+.intro-section {
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+
+/* ============================= */
+/* BENEFIT CARDS                 */
+/* ============================= */
+
+.benefits-section {
+  animation: fadeUp 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.benefit-card {
+  opacity: 0;
+  animation: fadeUp 0.7s ease-out forwards;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.benefit-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.benefit-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.benefit-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.benefit-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.benefit-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.benefit-card:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.benefit-card:hover {
+  transform: translateY(-6px);
+}
+
+
+/* ============================= */
+/* COURSES TITLE                 */
+/* ============================= */
+
+.courses-title {
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+
+/* ============================= */
+/* COURSE CARDS                  */
+/* ============================= */
+
+.course-row {
+  animation: fadeUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.course-row:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.course-row:nth-child(2) {
+  animation-delay: 0.35s;
+}
+
+.course-row:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.course-row:nth-child(4) {
+  animation-delay: 0.65s;
+}
+
+
+/* Course card hover */
+
+.course-card {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ============================= */
+/* BUTTON                        */
+/* ============================= */
+
+.course-button {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.course-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.course-button:active {
+  transform: scale(0.96);
+}
+
+
+/* ============================= */
+/* ICON HOVER                    */
+/* ============================= */
+
+.benefit-icon {
+  transition: transform 0.3s ease;
+}
+
+.benefit-card:hover .benefit-icon {
+  transform: scale(1.1) rotate(3deg);
+}
+
+
+/* ============================= */
+/* REDUCED MOTION                */
+/* ============================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-section,
+  .brand-image,
+  .intro-section,
+  .benefits-section,
+  .benefit-card,
+  .courses-title,
+  .course-row {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .course-card,
+  .benefit-card,
+  .course-button {
+    transition: none;
+  }
+}

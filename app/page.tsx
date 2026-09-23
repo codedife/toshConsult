@@ -2,12 +2,19 @@ import React from 'react'
 import Navbar from '../app/components/Navbar'
 import Footer from '../app/components/Footer'
 import Home from "../app/Landingpage/Home"
+
 const page = () => {
   return (
-    <div>
+    <div className="animate-fadeIn">
       <Navbar />
-      <Home />
-      <Footer />
+
+      <div className="animate-slideUp">
+        <Home />
+      </div>
+
+      <div className="animate-slideUp">
+        <Footer />
+      </div>
     </div>
   )
 }
