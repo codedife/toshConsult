@@ -161,7 +161,7 @@ const Page = () => {
         </p>
       </div>
 
-      <div className=' flex flex-col h-auto mt-20'>
+      <div className=' flex flex-col h-auto m-20 space-y-5'>
 
         <div className='flex flex-row space-x-5'>
 
@@ -219,7 +219,7 @@ const Page = () => {
                 </div>
               </div>
             </div>
-            <button className="bg-black text-white px-4 py-1.5 rounded-full font-semibold hover:bg-gray-800 transition mt-10">
+            <button className="bg-black text-white px-4 py-1.5 rounded-full font-semibold hover:bg-gray-800 transition mt-[14%]">
               Get Started
             </button>
           </div>
@@ -252,7 +252,7 @@ const Page = () => {
                 </div>
               </div>
 
-              <div className='flex flex-col'>
+              <div className='flex flex-col ml-3'>
                 <p className='text-[12px] text-gray-600 font-light'>
                   Learning time
                 </p>
@@ -277,8 +277,367 @@ const Page = () => {
                 </div>
               </div>
             </div>
-            <button className="bg-black text-white px-4 py-1.5 rounded-full font-semibold hover:bg-gray-800 transition mt-10">
+            <button className="bg-black text-white px-4 py-1.5 rounded-full font-semibold hover:bg-gray-800 transition mt-12">
               Get Started
+            </button>
+          </div>
+          </div>
+          <div className='flex flex-row space-x-5'>
+           
+            <div className='bg-amber-200 w-[30vw] h-[73vh] p-5'>
+               <div className='w-[20vw] space-y-2'>
+              <p className='text-black font-bold text-[25px]'>
+               Mobile App Development Course
+              </p>
+
+              <p className='text-gray-500 text-[12px]'>
+                Develop Android and iOS apps from scratch.
+                learn mobile UI/UX design principles. Work with
+                frameworks like React Native or Flutter. Launch
+                your apps on app stores
+              </p>
+            </div>
+
+            <div className='grid grid-cols-2 mt-5 gap-2'>
+
+              <div className='flex flex-col w-[20vw]'>
+                <p className='text-[12px] text-gray-600 font-light'>
+                  Curriculum
+                </p>
+
+                <div className='flex flex-row mt-1 items-center gap-2'>
+                  <Image src={thick} alt='thick'/>
+                  <p className='font-bold text-black'>
+                    02 SEPT Batches
+                  </p>
+                </div>
+              </div>
+
+              <div className='flex flex-col ml-3'>
+                <p className='text-[12px] text-gray-600 font-light'>
+                  Learning time
+                </p>
+
+                <div className='flex flex-row mt-1 items-center gap-2'>
+                  <Image src={thick} alt='thick'/>
+                  <p className='font-bold text-black'>
+                      Weekend
+                  </p>
+                </div>
+
+              </div>
+              <div className='flex flex-col'>
+                <p className='text-[12px] text-gray-600 font-light'>
+                  Lesson time
+                </p>
+                <div className='flex flex-row mt-1 items-center gap-2'>
+                  <Image src={thick} alt='thick'/>
+                  <p className='font-bold text-black'>
+                      Duration
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button className="bg-black text-white px-4 py-1.5 rounded-full font-semibold hover:bg-gray-800 transition mt-14">
+              Get Started
+            </button>
+          </div>
+            
+          <div className='bg-fuchsia-100 w-[40vw] h-[73vh]  p-7'>
+
+            <div className='w-[30vw] space-y-2'>
+              <p className='text-black font-bold text-[25px]'>
+                Python Fullstack Development Course
+              </p>
+
+              <p className='text-gray-500 text-[12px]'>
+               Combine Python's versatility with frontend and backend technologies,
+               build dynamic websites using frameworks like Django and Flask. Develop
+              interactive user interfoces with JavaScript.
+              </p>
+            </div>
+
+            <div className='grid grid-cols-2 mt-5 gap-2'>
+
+              <div className='flex flex-col'>
+                <p className='text-[12px] text-gray-600 font-light'>
+                  Curriculum
+                </p>
+
+                <div className='flex flex-row mt-1 items-center gap-2'>
+                  <Image src={thick} alt='thick'/>
+                  <p className='font-bold text-black'>
+                    02 SEPT Batches
+                  </p>
+                </div>
+              </div>
+
+              <div className='flex flex-col'>
+                <p className='text-[12px] text-gray-600 font-light'>
+                  Learning time
+                </p>
+
+                <div className='flex flex-row mt-1 items-center gap-2'>
+                  <Image src={thick} alt='thick'/>
+                  <p className='font-bold text-black'>
+                      MON - FRI
+                  </p>
+                </div>
+
+              </div>
+              <div className='flex flex-col'>
+                <p className='text-[12px] text-gray-600 font-light'>
+                  Lesson time
+                </p>
+                <div className='flex flex-row mt-1 items-center gap-2'>
+                  <Image src={thick} alt='thick'/>
+                  <p className='font-bold text-black'>
+                      Duration
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button className="bg-black text-white px-4 py-1.5 rounded-full font-semibold hover:bg-gray-800 transition mt-[14%]">
+              Get Started
+            </button>
+          </div>
+          </div>
+          <div className='flex flex-row space-x-5'>
+
+          <div className='bg-fuchsia-100 w-[40vw] h-[73vh] p-7'>
+
+            <div className='w-[30vw] space-y-2'>
+              <p className='text-black font-bold text-[25px]'>
+               JavaScript Fullstack Development Course
+              </p>
+
+              <p className='text-gray-500 text-[12px]'>
+               Become proficient in both frontend and backend JavaScript
+                technologies. Leam Node.js for server side development. Use React or
+                Angular for building madern, dynamic interfaces.
+              </p>
+            </div>
+
+            <div className='grid grid-cols-2 mt-5 gap-2'>
+
+              <div className='flex flex-col'>
+                <p className='text-[12px] text-gray-600 font-light'>
+                  Curriculum
+                </p>
+
+                <div className='flex flex-row mt-1 items-center gap-2'>
+                  <Image src={thick} alt='thick'/>
+                  <p className='font-bold text-black'>
+                    02 SEPT Batches
+                  </p>
+                </div>
+              </div>
+
+              <div className='flex flex-col'>
+                <p className='text-[12px] text-gray-600 font-light'>
+                  Learning time
+                </p>
+
+                <div className='flex flex-row mt-1 items-center gap-2'>
+                  <Image src={thick} alt='thick'/>
+                  <p className='font-bold text-black'>
+                      MON - FRI
+                  </p>
+                </div>
+
+              </div>
+              <div className='flex flex-col'>
+                <p className='text-[12px] text-gray-600 font-light'>
+                  Lesson time
+                </p>
+                <div className='flex flex-row mt-1 items-center gap-2'>
+                  <Image src={thick} alt='thick'/>
+                  <p className='font-bold text-black'>
+                      Duration
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button className="bg-black text-white px-4 py-1.5 rounded-full font-semibold hover:bg-gray-800 transition mt-[14%]">
+              Get Started
+            </button>
+          </div>
+          <div className='bg-amber-200 w-[30vw] h-[73vh] p-5'>
+               <div className='w-[20vw] space-y-2'>
+              <p className='text-black font-bold text-[25px] w-[22vw]'>
+                UI/UX Design Fundamentals Course
+              </p>
+
+              <p className='text-gray-500 text-[12px]'>
+                Master the art of user-centered design. Learn wireframing, prototypin 
+                and user testing. 
+                Explore tools like Sketch and Adobe XD, Craft 
+                seamless and intuitive user experiences.
+              </p>
+            </div>
+
+            <div className='grid grid-cols-2 mt-5 gap-2'>
+
+              <div className='flex flex-col w-[20vw]'>
+                <p className='text-[12px] text-gray-600 font-light'>
+                  Curriculum
+                </p>
+
+                <div className='flex flex-row mt-1 items-center gap-2'>
+                  <Image src={thick} alt='thick'/>
+                  <p className='font-bold text-black'>
+                    02 SEPT Batches
+                  </p>
+                </div>
+              </div>
+
+              <div className='flex flex-col ml-3'>
+                <p className='text-[12px] text-gray-600 font-light'>
+                  Learning time
+                </p>
+
+                <div className='flex flex-row mt-1 items-center gap-2'>
+                  <Image src={thick} alt='thick'/>
+                  <p className='font-bold text-black'>
+                      Weekend
+                  </p>
+                </div>
+
+              </div>
+              <div className='flex flex-col'>
+                <p className='text-[12px] text-gray-600 font-light'>
+                  Lesson time
+                </p>
+                <div className='flex flex-row mt-1 items-center gap-2'>
+                  <Image src={thick} alt='thick'/>
+                  <p className='font-bold text-black'>
+                      Duration
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button className="bg-black text-white px-4 py-1.5 rounded-full font-semibold hover:bg-gray-800 transition mt-12">
+              Get Started
+            </button>
+          </div>
+          </div>
+          <div className='flex flex-row space-x-5'>
+           
+           <div className='bg-amber-200 w-[30vw] h-[73vh] rounded-b-xl p-6'>
+               <div className='w-[20vw] space-y-2'>
+              <p className='text-black font-bold text-[25px]'>
+                Digital Marketing Course
+              </p>
+
+              <p className='text-gray-500 text-[12px] w-[23vw]'>
+                Unlock the power of onling marketing. Learn SEO, social media
+                 marketing, email marketing, and PPC 
+                 advertising. Analyze data, create compelling
+                campaigns, and boost online presence.
+              </p>
+            </div>
+
+            <div className='grid grid-cols-2 mt-5 gap-2'>
+
+              <div className='flex flex-col w-[20vw]'>
+                <p className='text-[12px] text-gray-600 font-light'>
+                  Curriculum
+                </p>
+
+                <div className='flex flex-row mt-1 items-center gap-2'>
+                  <Image src={thick} alt='thick'/>
+                  <p className='font-bold text-black'>
+                    02 SEPT Batches
+                  </p>
+                </div>
+              </div>
+
+              <div className='flex flex-col ml-3'>
+                <p className='text-[12px] text-gray-600 font-light'>
+                  Learning time
+                </p>
+
+                <div className='flex flex-row mt-1 items-center gap-2'>
+                  <Image src={thick} alt='thick'/>
+                  <p className='font-bold text-black'>
+                      Weekend
+                  </p>
+                </div>
+
+              </div>
+              <div className='flex flex-col'>
+                <p className='text-[12px] text-gray-600 font-light'>
+                  Lesson time
+                </p>
+                <div className='flex flex-row mt-1 items-center gap-2'>
+                  <Image src={thick} alt='thick'/>
+                  <p className='font-bold text-black'>
+                      Duration
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button className="bg-black text-white px-4 py-1.5 rounded-full font-semibold hover:bg-gray-800 transition mt-12">
+              Coming soon
+            </button>
+          </div>
+
+          <div className='bg-fuchsia-100 w-[40vw] h-[73vh] rounded-b-xl p-7'>
+
+            <div className='w-[30vw] space-y-2'>
+              <p className='text-black font-bold text-[25px] w-[20vw]'>
+               Wordpress Development Course
+              </p>
+
+              <p className='text-gray-500 text-[12px]'>
+                Master Wordpress from basics to advanced customization. Create
+                responsive and SEO-friendly websites. Explore theme development,
+                plugins, and e-commerce integration.
+              </p>
+            </div>
+
+            <div className='grid grid-cols-2 mt-5 gap-2'>
+
+              <div className='flex flex-col'>
+                <p className='text-[12px] text-gray-600 font-light'>
+                  Curriculum
+                </p>
+
+                <div className='flex flex-row mt-1 items-center gap-2'>
+                  <Image src={thick} alt='thick'/>
+                  <p className='font-bold text-black'>
+                    02 SEPT Batches
+                  </p>
+                </div>
+              </div>
+
+              <div className='flex flex-col'>
+                <p className='text-[12px] text-gray-600 font-light'>
+                  Learning time
+                </p>
+
+                <div className='flex flex-row mt-1 items-center gap-2'>
+                  <Image src={thick} alt='thick'/>
+                  <p className='font-bold text-black'>
+                      MON - FRI
+                  </p>
+                </div>
+
+              </div>
+              <div className='flex flex-col'>
+                <p className='text-[12px] text-gray-600 font-light'>
+                  Lesson time
+                </p>
+                <div className='flex flex-row mt-1 items-center gap-2'>
+                  <Image src={thick} alt='thick'/>
+                  <p className='font-bold text-black'>
+                      Duration
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button className="bg-black text-white px-4 py-1.5 rounded-full font-semibold hover:bg-gray-800 transition mt-[13%]">
+              Coming soon
             </button>
           </div>
           </div>

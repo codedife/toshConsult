@@ -8,7 +8,7 @@ import img4 from "../../image/Rectangle 6.png"
 
 const Hero = () => {
   return (
-    <section className='bg-pink-100 h-auto w-full flex items-center justify-center  flex-col space-y-10'>
+    <section className='bg-pink-100 h-auto w-full flex items-center justify-center  flex-col space-y-10 mt-10'>
         <div className='flex flex-row justify-between w-[70vw] mt-16'>
              <Image src={img1} alt='re' className='h-[35vh] w-auto' />
              <div className='flex flex-col items-center w-[35vw] h-auto space-y-5'>
