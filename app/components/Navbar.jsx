@@ -41,12 +41,12 @@ const Navbar = () => {
           </a>
         </li>
         <li className="relative w-full md:w-auto">
-          <a
+          <button
             onClick={() => setCourseOpen(!courseOpen)}
             className="cursor-pointer flex items-center gap-2"
           >
-            Course <span>V</span>
-          </a>
+            Course <span>⌄</span>
+          </button>
 
           {courseOpen && (
             <div className="relative md:absolute md:top-8 md:left-1/2 md:-translate-x-1/2 z-50 mt-3 md:mt-0">

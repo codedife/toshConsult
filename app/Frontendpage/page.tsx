@@ -32,7 +32,7 @@ const page = () => {
               Dive into the Future of Tech Education. Select <br className="hidden md:block" />
               Your Course, Apply Instantly.
             </p>
-            <button className="py-2.5 px-5 bg-black text-white rounded-full text-[13px]">
+            <button className="py-2.5 px-5 bg-black text-white rounded-full text-[13px] hover:bg-white transition duration-300 hover:border hover:border-black cursor-pointer hover:text-black">
               Get Started
             </button>
           </div>
@@ -118,10 +118,10 @@ const page = () => {
               <li>• MON - FRI</li>
             </ul>
             <div className="flex justify-end gap-2">
-              <button className="bg-orange-500 text-white text-[10px] px-4 py-2 rounded-full">
+              <button className="bg-orange-500 text-white text-[10px] px-4 py-2 rounded-full hover:bg-white transition duration-300 hover:border hover:border-black cursor-pointer hover:text-black">
                 Request quote
               </button>
-              <button className="bg-black text-white text-[10px] px-5 py-2 rounded-full">
+              <button className="bg-black text-white text-[10px] px-5 py-2 rounded-full hover:bg-white transition duration-300 hover:border hover:border-black cursor-pointer hover:text-black">
                 Start course
               </button>
             </div>
@@ -169,10 +169,10 @@ const page = () => {
               <li>• MON - FRI</li>
             </ul>
             <div className="flex justify-end gap-2">
-              <button className="bg-orange-500 text-white text-[10px] px-4 py-2 rounded-full">
+              <button className="bg-orange-500 text-white text-[10px] px-4 py-2 rounded-full hover:bg-white transition duration-300 hover:border hover:border-black cursor-pointer hover:text-black">
                 Request quote
               </button>
-              <button className="bg-black text-white text-[10px] px-5 py-2 rounded-full">
+              <button className="bg-black text-white text-[10px] px-5 py-2 rounded-full hover:bg-white transition duration-300 hover:border hover:border-black cursor-pointer hover:text-black">
                 Start course
               </button>
             </div>
@@ -221,10 +221,10 @@ const page = () => {
               <li>• MON - FRI</li>
             </ul>
             <div className="flex justify-end gap-2">
-              <button className="bg-orange-500 text-white text-[10px] px-4 py-2 rounded-full">
+              <button className="bg-orange-500 text-white text-[10px] px-4 py-2 rounded-full hover:bg-white transition duration-300 hover:border hover:border-black cursor-pointer hover:text-black">
                 Request quote
               </button>
-              <button className="bg-black text-white text-[10px] px-5 py-2 rounded-full">
+              <button className="bg-black text-white text-[10px] px-5 py-2 rounded-full hover:bg-white transition duration-300 hover:border hover:border-black cursor-pointer hover:text-black">
                 Start course
               </button>
             </div>
