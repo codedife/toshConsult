@@ -77,7 +77,7 @@ const page = () => {
             Explore the unique benefits that set us apart and pave the way for your success.
           </p>
         </div>
-<<<<<<< HEAD
+
         <div className="flex flex-col md:flex-row items-center mb-12">
           <div className="w-full md:w-[44%] shrink-0">
             <Image
@@ -231,7 +231,7 @@ const page = () => {
               </button>
             </div>
           </div>
-=======
+
        <div className="flex flex-col md:flex-row items-center mb-12">
 
   <div className="w-full md:w-[44%] shrink-0">
@@ -264,7 +264,7 @@ const page = () => {
           </span>
 
           <p className="text-[9px] line-through">₦100,000</p>
->>>>>>> cb6316015970fd654ad72e40cccd98cbc4a2287d
+        </div>
         </div>
       </div>
     </div>

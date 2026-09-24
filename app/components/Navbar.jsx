@@ -45,13 +45,9 @@ const Navbar = () => {
             onClick={() => setCourseOpen(!courseOpen)}
             className="cursor-pointer flex items-center gap-2"
           >
-<<<<<<< HEAD
-            Course <span>⌄</span>
+
+             Course <span>ᵛ</span>
           </button>
-=======
-            Course <span>ᵛ</span>
-          </a>
->>>>>>> cb6316015970fd654ad72e40cccd98cbc4a2287d
 
           {courseOpen && (
             <div className="relative md:absolute md:top-8 md:left-1/2 md:-translate-x-1/2 z-50 mt-3 md:mt-0">
