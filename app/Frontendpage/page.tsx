@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
@@ -76,6 +77,7 @@ const page = () => {
             Explore the unique benefits that set us apart and pave the way for your success.
           </p>
         </div>
+<<<<<<< HEAD
         <div className="flex flex-col md:flex-row items-center mb-12">
           <div className="w-full md:w-[44%] shrink-0">
             <Image
@@ -229,7 +231,201 @@ const page = () => {
               </button>
             </div>
           </div>
+=======
+       <div className="flex flex-col md:flex-row items-center mb-12">
+
+  <div className="w-full md:w-[44%] shrink-0">
+    <Image
+      src={fondermental}
+      alt="Fundamental JavaScript Course"
+      className="w-full h-[220px] sm:h-[250px] md:h-[270px] object-cover rounded-xl"
+    />
+  </div>
+
+  <div className="relative z-10 -mt-6 md:mt-5 md:-ml-10 md:mr-5 w-[85%] md:w-[52%] top-6 min-w-0 bg-white p-5 rounded-xl shadow-md">
+
+    <div className="flex flex-col sm:flex-row justify-between gap-4 mb-4">
+      <div>
+        <h3 className="text-base font-bold text-black">
+          Fundamental <br /> of JavaScript
+        </h3>
+
+        <p className="text-gray-500 text-[10px] mt-2">
+          The beginner's course to become a pro in JavaScript.
+        </p>
+      </div>
+
+      <div className="shrink-0">
+        <h3 className="text-base font-bold text-black">₦50,000</h3>
+
+        <div className="flex items-center gap-1">
+          <span className="bg-orange-500 text-white text-[8px] p-1 rounded">
+            50% OFF
+          </span>
+
+          <p className="text-[9px] line-through">₦100,000</p>
+>>>>>>> cb6316015970fd654ad72e40cccd98cbc4a2287d
         </div>
+      </div>
+    </div>
+
+    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-5 text-[10px] text-black">
+      <p>✓ Data fetching</p>
+      <p>✓ Variable</p>
+      <p>✓ Mapping</p>
+      <p>✓ Looping</p>
+      <p>✓ JSON</p>
+      <p>✓ Data object</p>
+    </div>
+
+    <ul className="flex flex-wrap justify-between gap-2 text-[10px] text-black mb-5 w-full">
+      <li>• Beginners</li>
+      <li>• 3 Weeks</li>
+      <li>• MON - FRI</li>
+    </ul>
+
+    <div className="flex flex-wrap justify-end gap-2">
+      <button className="bg-orange-500 text-white text-[10px] px-4 py-2 rounded-full">
+        Request quote
+      </button>
+
+      <button className="bg-black text-white text-[10px] px-5 py-2 rounded-full">
+        Start course
+      </button>
+    </div>
+
+  </div>
+</div>
+
+
+<div className="flex flex-col md:flex-row items-center mb-12">
+
+  <div className="w-full md:w-[44%] shrink-0">
+    <Image
+      src={htmlcss}
+      alt="HTML and CSS Course"
+      className="w-full h-[220px] sm:h-[250px] md:h-[270px] object-cover rounded-xl"
+    />
+  </div>
+
+  <div className="relative z-10 -mt-6 md:mt-5 md:-ml-10 md:mr-5 w-[85%] md:w-[52%] top-6 min-w-0 bg-white p-5 rounded-xl shadow-md">
+
+    <div className="flex flex-col sm:flex-row justify-between gap-4 mb-4">
+      <div>
+        <h3 className="text-base font-bold text-black">
+          Fundamental HTML <br /> & CSS
+        </h3>
+
+        <p className="text-gray-500 text-[10px] mt-2">
+          Learn HTML and CSS to build responsive websites.
+        </p>
+      </div>
+
+      <div className="shrink-0">
+        <h3 className="text-base font-bold text-black">₦50,000</h3>
+
+        <div className="flex items-center gap-1">
+          <span className="bg-orange-500 text-white text-[8px] p-1 rounded">
+            50% OFF
+          </span>
+
+          <p className="text-[9px] line-through">₦100,000</p>
+        </div>
+      </div>
+    </div>
+
+    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-5 text-[10px] text-black">
+      <p>✓ HTML5</p>
+      <p>✓ CSS3</p>
+      <p>✓ Flexbox</p>
+      <p>✓ Grid</p>
+      <p>✓ Responsive</p>
+      <p>✓ Animations</p>
+    </div>
+
+    <ul className="flex flex-wrap justify-between gap-2 text-[10px] text-black mb-5 w-full">
+      <li>• Beginners</li>
+      <li>• 3 Weeks</li>
+      <li>• MON - FRI</li>
+    </ul>
+
+    <div className="flex flex-wrap justify-end gap-2">
+      <button className="bg-orange-500 text-white text-[10px] px-4 py-2 rounded-full">
+        Request quote
+      </button>
+
+      <button className="bg-black text-white text-[10px] px-5 py-2 rounded-full">
+        Start course
+      </button>
+    </div>
+
+  </div>
+</div>
+
+
+<div className="flex flex-col md:flex-row items-center mb-12">
+
+  <div className="w-full md:w-[44%] shrink-0">
+    <Image
+      src={reacthtml}
+      alt="React and Hooks Course"
+      className="w-full h-[220px] sm:h-[250px] md:h-[270px] object-cover rounded-xl"
+    />
+  </div>
+
+  <div className="relative z-10 -mt-6 md:mt-5 md:-ml-10 md:mr-5 w-[85%] md:w-[52%] top-6 min-w-0 bg-white p-5 rounded-xl shadow-md">
+
+    <div className="flex flex-col sm:flex-row justify-between gap-4 mb-4">
+      <div>
+        <h3 className="text-base font-bold text-black">
+          Fundamental React <br /> & Hooks
+        </h3>
+
+        <p className="text-gray-500 text-[10px] mt-2">
+          Learn React and Hooks to build modern web applications.
+        </p>
+      </div>
+
+      <div className="shrink-0">
+        <h3 className="text-base font-bold text-black">₦50,000</h3>
+
+        <div className="flex items-center gap-1">
+          <span className="bg-orange-500 text-white text-[8px] p-1 rounded">
+            50% OFF
+          </span>
+
+          <p className="text-[9px] line-through">₦100,000</p>
+        </div>
+      </div>
+    </div>
+
+    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-5 text-[10px] text-black">
+      <p>✓ Components</p>
+      <p>✓ Props</p>
+      <p>✓ useState</p>
+      <p>✓ useEffect</p>
+      <p>✓ React Hooks</p>
+      <p>✓ API Fetching</p>
+    </div>
+
+    <ul className="flex flex-wrap justify-between gap-2 text-[10px] text-black mb-5 w-full">
+      <li>• Beginners</li>
+      <li>• 3 Weeks</li>
+      <li>• MON - FRI</li>
+    </ul>
+
+    <div className="flex flex-wrap justify-end gap-2">
+      <button className="bg-orange-500 text-white text-[10px] px-4 py-2 rounded-full">
+        Request quote
+      </button>
+
+      <button className="bg-black text-white text-[10px] px-5 py-2 rounded-full">
+        Start course
+      </button>
+    </div>
+
+  </div>
+</div>
       </section>
       <section className="bg-[#111111] px-[6%] md:px-[9%] py-16 md:py-20">
         <div className="text-center mb-16">
@@ -348,46 +544,54 @@ const page = () => {
             Explore the unique benefits that set us apart and pave the way for your success.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <div className="flex items-center gap-3">
-              <h3 className="text-gray-300 text-6xl font-bold">
-                01
-              </h3>
-              <div className="hidden md:flex flex-1 items-center">
-                <div className="w-full h-[1px] bg-orange-500"></div>
-                <span className="text-orange-500 text-[8px]">●</span>
-              </div>
-            </div>
-            <p className="text-black text-xs font-medium mt-2">
-              Choose your preferred <br /> course
-            </p>
-          </div>
-          <div>
-            <div className="flex items-center gap-3">
-              <h3 className="text-gray-300 text-6xl font-bold">
-                02
-              </h3>
-              <div className="hidden md:flex flex-1 items-center">
-                <div className="w-full h-[1px] bg-orange-500"></div>
-                <span className="text-orange-500 text-[8px]">●</span>
-              </div>
-            </div>
-            <p className="text-black text-xs font-medium mt-2">
-              Reach out to us to <br /> purchase course
-            </p>
-          </div>
-          <div>
-            <div className="flex items-center gap-3">
-              <h3 className="text-gray-300 text-6xl font-bold">
-                03
-              </h3>
-            </div>
-            <p className="text-black text-xs font-medium mt-2">
-              Start learning and <br /> become professional
-            </p>
-          </div>
-        </div>
+ <div className="flex flex-col md:flex-row justify-center items-center gap-8 w-full">
+                <div>
+                    <div className="flex items-center gap-3">
+                    <h3 className="text-gray-300 text-6xl font-bold">
+                        01
+                    </h3>
+
+                    <div className="hidden md:flex flex-1 items-center">
+                        <div className="w-[10vw] h-[1px] bg-orange-500"></div>
+                        <span className="text-orange-500 text-[8px]">●</span>
+                    </div>
+                    </div>
+
+                    <p className="text-black text-xs font-medium mt-2">
+                    Choose your preferred <br /> course
+                    </p>
+                </div>
+
+                <div>
+                    <div className="flex items-center gap-3">
+                    <h3 className="text-gray-300 text-6xl font-bold">
+                        02
+                    </h3>
+
+                       <div className="hidden md:flex flex-1 items-center">
+                        <div className="w-[10vw] h-[1px] bg-orange-500"></div>
+                        <span className="text-orange-500 text-[8px]">●</span>
+                    </div>
+                    </div>
+
+                    <p className="text-black text-xs font-medium mt-2">
+                    Reach out to us to <br /> purchase course
+                    </p>
+                </div>
+
+                <div>
+                    <div className="flex items-center gap-3">
+                    <h3 className="text-gray-300 text-6xl font-bold">
+                        03
+                    </h3>
+                    </div>
+
+                    <p className="text-black text-xs font-medium mt-2">
+                    Start learning and <br /> become professional
+                    </p>
+                </div>
+
+         </div>
       </section>
       <section className="bg-white px-[6%] md:px-[11%] py-12">
         <div className="text-center mb-10">

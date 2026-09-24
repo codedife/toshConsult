@@ -45,8 +45,13 @@ const Navbar = () => {
             onClick={() => setCourseOpen(!courseOpen)}
             className="cursor-pointer flex items-center gap-2"
           >
+<<<<<<< HEAD
             Course <span>⌄</span>
           </button>
+=======
+            Course <span>ᵛ</span>
+          </a>
+>>>>>>> cb6316015970fd654ad72e40cccd98cbc4a2287d
 
           {courseOpen && (
             <div className="relative md:absolute md:top-8 md:left-1/2 md:-translate-x-1/2 z-50 mt-3 md:mt-0">
@@ -58,7 +63,7 @@ const Navbar = () => {
                     <Image src={frontend} alt="frontend" className="w-8 h-8 object-contain" />
                     <span className="text-xs md:text-sm text-gray-950">Frontend development</span>
                   </a>
-                  <a href="/courses/backend" className="flex items-center gap-3">
+                  <a href="/Backendpage" className="flex items-center gap-3">
                     <Image src={backend} alt="backend" className="w-8 h-8 object-contain" />
                     <span className="text-xs md:text-sm text-gray-950">Backend development</span>
                   </a>
