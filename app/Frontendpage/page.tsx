@@ -20,18 +20,27 @@ const page = () => {
   return (
     <div>
       <Navbar />
-      <section className='px-[11%] bg-white pt-[100px] pb-[40px]'>
-        <div className='flex justify-between items-cente'>
-          <div className='pt-[50px]'>
-            <h1 className='font-bold text-[40px] text-black mb-5 '>Become a <br />frontend <br />professional</h1>
-            <p className='text-[12px] text-gray-600 mb-[20px]'>Dive into the Future of Tech Education. Select <br />Your Course, Apply Instantly.</p>
-            <button className='py-[10px] px-[20px] bg-black rounded-[30px] text-[13px]'>Get Started</button>
+      <section className="px-[6%] md:px-[11%] bg-white pt-20 md:pt-[100px] pb-10">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="pt-5 md:pt-[50px] w-full md:w-1/2">
+            <h1 className="font-bold text-[32px] md:text-[40px] text-black mb-5 leading-tight">
+              Become a <br />
+              frontend <br />
+              professional
+            </h1>
+            <p className="text-xs text-gray-600 mb-5">
+              Dive into the Future of Tech Education. Select <br className="hidden md:block" />
+              Your Course, Apply Instantly.
+            </p>
+            <button className="py-2.5 px-5 bg-black text-white rounded-full text-[13px]">
+              Get Started
+            </button>
           </div>
-          <div className='mt-[30px]'>
+          <div className="w-full md:w-1/2 mt-2 md:mt-[30px]">
             <Image
               src={Frontendhero}
-              alt="brand"
-              className='h-auto w-[40vw] rounded-2xl'
+              alt="Frontend development"
+              className="h-auto w-full rounded-2xl"
             />
           </div>
         </div>
