@@ -26,12 +26,7 @@ const Footer = () => {
               <a href="https://web.facebook.com/toshconsult?_rdc=1&_rdr#"> <Image src={face} alt="facebook" className="h-9 w-9 object-contain" /></a>
             </div>
       </div>
-
-
-      {/* Footer Content */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mt-16">
-
-        {/* Contact */}
         <div>
           <h2 className="font-semibold mb-8">
             Contact
@@ -67,14 +62,7 @@ const Footer = () => {
             </div>
 
           </div>
-
-          <p className="text-gray-500 text-[10px] mt-24">
-            2023 Copyright By Toshconsult.
-          </p>
         </div>
-
-
-        {/* Courses */}
         <div>
           <h2 className="text-xl font-semibold mb-8">
             Courses
@@ -185,6 +173,11 @@ const Footer = () => {
           </ul>
         </div>
 
+      </div>
+      <div>
+        <p className="text-gray-500 text-[10px] mt-24">
+            2023 Copyright By Toshconsult.
+          </p>
       </div>
 
     </footer>
