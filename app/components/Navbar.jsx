@@ -45,7 +45,7 @@ const Navbar = () => {
             onClick={() => setCourseOpen(!courseOpen)}
             className="cursor-pointer flex items-center gap-2"
           >
-            Course <span>V</span>
+            Course <span>ᵛ</span>
           </a>
 
           {courseOpen && (
@@ -58,7 +58,7 @@ const Navbar = () => {
                     <Image src={frontend} alt="frontend" className="w-8 h-8 object-contain" />
                     <span className="text-xs md:text-sm text-gray-950">Frontend development</span>
                   </a>
-                  <a href="/courses/backend" className="flex items-center gap-3">
+                  <a href="/Backendpage" className="flex items-center gap-3">
                     <Image src={backend} alt="backend" className="w-8 h-8 object-contain" />
                     <span className="text-xs md:text-sm text-gray-950">Backend development</span>
                   </a>

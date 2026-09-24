@@ -1,11 +1,12 @@
+
 import React from 'react'
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import Frontendhero from '../../image/frontendhero.jpg'
-import fondermental from '../../image/fondermental.png'
-import htmlcss from '../../image/htmlcss.png'
-import reacthtml from '../../image/reacthtml.png'
+import Backendhero from '../../image/Group 40.png'
+import Mongodb from '../../image/Rectangle 29.png'
+import Apitypes from '../../image/Rectangle 30.png'
+import Restapi from '../../image/Rectangle 31.png'
 import faruq from '../../image/faruq.png'
 import sulyman from '../../image/sulyman.png'
 import bolu from '../../image/bolu.png'
@@ -24,8 +25,8 @@ const page = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="pt-5 md:pt-[50px] w-full md:w-1/2">
             <h1 className="font-bold text-[32px] md:text-[40px] text-black mb-5 leading-tight">
-              Become a <br />
-              frontend <br />
+              Become a  <br />
+              backend <br />
               professional
             </h1>
             <p className="text-xs text-gray-600 mb-5">
@@ -38,32 +39,45 @@ const page = () => {
           </div>
           <div className="w-full md:w-1/2 mt-2 md:mt-[30px]">
             <Image
-              src={Frontendhero}
-              alt="Frontend development"
+              src={Backendhero}
+              alt="Backend development"
               className="h-auto w-full rounded-2xl"
             />
           </div>
         </div>
       </section>
-      <section className='px-[11%] bg-pink-100 py-[50px]'>
-        <div className='grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-[30px]'>
-          <div className='bg-black p-[20px] rounded-2xl'>
-            <p className='text-[11px] pb-[40px]'>Inter- state education</p>
-            <h1 className='font-bold text-4xl text-white pb-[40px]'>70%</h1>
-            <p className='text-[15px]'>Reach more than 3,000 <br />students around the <br />nigeria.</p>
-          </div>
-          <div className='bg-black p-[20px] rounded-2xl'>
-            <p className='text-[11px] pb-[40px]'>Students onboard</p>
-            <h1 className='font-bold text-4xl text-white pb-[40px]'>3000+</h1>
-            <p className='text-[15px]'>Onboarded to our <br />frontend development <br />training.</p>
-          </div>
-          <div className='bg-black p-[20px] rounded-2xl'>
-            <p className='text-[11px] pb-[40px]'>Access to jobs opportunities</p>
-            <h1 className='font-bold text-4xl text-white pb-[40px]'>50%</h1>
-            <p className='text-[15px]'>Our past students had <br />been working in a top <br />brands.</p>
-          </div>
-        </div>
-      </section>
+      <section className='px-[11%] py-[30px] bg-white'>
+            <div className='grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-[20px]'>
+
+                <div className='bg-white p-[18px] rounded-2xl flex flex-col shadow-[0_0_20px_rgba(0,0,0,0.18)]'>
+                <h1 className='font-bold text-3xl text-black pb-[25px] text-center'>
+                    400+
+                </h1>
+                <p className='text-[11px] text-gray-600 text-center'>
+                    Interactive courses available for students.
+                </p>
+                </div>
+
+                <div className='bg-white p-[18px] rounded-2xl flex flex-col shadow-[0_0_20px_rgba(0,0,0,0.18)]'>
+                <h1 className='font-bold text-3xl text-black pb-[25px] text-center'>
+                    10
+                </h1>
+                <p className='text-[11px] text-gray-600 text-center'>
+                    Experienced backend experts ready to teach.
+                </p>
+                </div>
+
+                <div className='bg-white p-[18px] rounded-2xl flex flex-col shadow-[0_0_20px_rgba(0,0,0,0.18)]'>
+                <h1 className='font-bold text-3xl text-black pb-[25px] text-center'>
+                    400+
+                </h1>
+                <p className='text-[11px] text-gray-600 text-center'>
+                    Students currently studying backend development.
+                </p>
+                </div>
+
+            </div>
+        </section>
       <section className="px-[5%] md:px-[11%] py-7 bg-white">
         <div className="text-center mb-12">
           <h3 className="text-black text-[28px] font-bold">
@@ -76,199 +90,193 @@ const page = () => {
             Explore the unique benefits that set us apart and pave the way for your success.
           </p>
         </div>
-       <div className="flex flex-col md:flex-row items-center mb-12">
+        <div className="flex flex-col md:flex-row items-center mb-12">
+          <div className="w-full md:w-[44%] shrink-0">
+            <Image
+              src={Mongodb}
+              alt="mongodb"
+              className="w-full h-[270px] object-cover rounded-xl"
+            />
+          </div>
+            <div className="relative z-10 -mt-6 md:mt-5 md:-ml-10 md:mr-5 w-[85%] md:w-[52%] top-6 min-w-0 bg-white p-5 rounded-xl shadow-md">
+              <div className="flex flex-col sm:flex-row justify-between gap-4 mb-4">
+                <div>
+                  <h3 className="text-base font-extrabold text-black">
+                    MongoDB and <br /> Mongoose
+                  </h3>
+                  <p className="text-gray-500 text-[10px] mt-2">
+                    The beginner's course to become a pro in JavaScript.
+                  </p>
+                </div>
 
-  <div className="w-full md:w-[44%] shrink-0">
-    <Image
-      src={fondermental}
-      alt="Fundamental JavaScript Course"
-      className="w-full h-[220px] sm:h-[250px] md:h-[270px] object-cover rounded-xl"
-    />
-  </div>
+                <div className="shrink-0">
+                  <h3 className="text-base font-bold text-black">₦50,000</h3>
+                  <div className="flex items-center gap-1">
+                    <span className="bg-orange-500 text-white text-[8px] p-1 rounded">
+                      50% OFF
+                    </span>
+                    <p className="text-[9px] line-through">₦100,000</p>
+                  </div>
+                </div>
+              </div>
 
-  <div className="relative z-10 -mt-6 md:mt-5 md:-ml-10 md:mr-5 w-[85%] md:w-[52%] top-6 min-w-0 bg-white p-5 rounded-xl shadow-md">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-5 text-[10px] text-black">
+                <p>✓ Data fetching</p>
+                <p>✓ Variable</p>
+                <p>✓ Mapping</p>
+                <p>✓ Looping</p>
+                <p>✓ JSON</p>
+                <p>✓ Data object</p>
+              </div>
 
-    <div className="flex flex-col sm:flex-row justify-between gap-4 mb-4">
-      <div>
-        <h3 className="text-base font-bold text-black">
-          Fundamental <br /> of JavaScript
-        </h3>
+              <ul className="flex flex-wrap justify-between gap-2 text-[10px] text-black mb-5 w-full">
+                <li>• Beginners</li>
+                <li>• 3 Weeks</li>
+                <li>• MON - FRI</li>
+              </ul>
 
-        <p className="text-gray-500 text-[10px] mt-2">
-          The beginner's course to become a pro in JavaScript.
-        </p>
-      </div>
-
-      <div className="shrink-0">
-        <h3 className="text-base font-bold text-black">₦50,000</h3>
-
-        <div className="flex items-center gap-1">
-          <span className="bg-orange-500 text-white text-[8px] p-1 rounded">
-            50% OFF
-          </span>
-
-          <p className="text-[9px] line-through">₦100,000</p>
-        </div>
-      </div>
-    </div>
-
-    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-5 text-[10px] text-black">
-      <p>✓ Data fetching</p>
-      <p>✓ Variable</p>
-      <p>✓ Mapping</p>
-      <p>✓ Looping</p>
-      <p>✓ JSON</p>
-      <p>✓ Data object</p>
-    </div>
-
-    <ul className="flex flex-wrap justify-between gap-2 text-[10px] text-black mb-5 w-full">
-      <li>• Beginners</li>
-      <li>• 3 Weeks</li>
-      <li>• MON - FRI</li>
-    </ul>
-
-    <div className="flex flex-wrap justify-end gap-2">
-      <button className="bg-orange-500 text-white text-[10px] px-4 py-2 rounded-full">
-        Request quote
-      </button>
-
-      <button className="bg-black text-white text-[10px] px-5 py-2 rounded-full">
-        Start course
-      </button>
-    </div>
-
-  </div>
-</div>
+              <div className="flex flex-wrap justify-end gap-4">
+                <button className="bg-orange-500 text-white text-[10px] px-4 py-2 rounded-full">
+                  Request quote
+                </button>
+                <button className="bg-black text-white text-[10px] px-5 py-2 rounded-full">
+                  Start course
+                </button>
+              </div>
+            </div>
+            </div>
 
 
-<div className="flex flex-col md:flex-row items-center mb-12">
+            <div className="flex flex-col md:flex-row items-center mb-12">
 
-  <div className="w-full md:w-[44%] shrink-0">
-    <Image
-      src={htmlcss}
-      alt="HTML and CSS Course"
-      className="w-full h-[220px] sm:h-[250px] md:h-[270px] object-cover rounded-xl"
-    />
-  </div>
+              <div className="w-full md:w-[44%] shrink-0">
+                <Image
+                  src={Apitypes}
+                  alt="Api"
+                  className="w-full h-[220px] sm:h-[250px] md:h-[270px] object-cover rounded-xl"
+                />
+              </div>
 
-  <div className="relative z-10 -mt-6 md:mt-5 md:-ml-10 md:mr-5 w-[85%] md:w-[52%] top-6 min-w-0 bg-white p-5 rounded-xl shadow-md">
+              <div className="relative z-10 -mt-6 md:mt-5 md:-ml-10 md:mr-5 w-[85%] md:w-[52%] top-6 min-w-0 bg-white p-5 rounded-xl shadow-md">
 
-    <div className="flex flex-col sm:flex-row justify-between gap-4 mb-4">
-      <div>
-        <h3 className="text-base font-bold text-black">
-          Fundamental HTML <br /> & CSS
-        </h3>
+                <div className="flex flex-col sm:flex-row justify-between gap-4 mb-4">
+                  <div>
+                    <h3 className="text-base font-extrabold text-black">
+                      Back End Development <br /> and APIs Projects
+                    </h3>
 
-        <p className="text-gray-500 text-[10px] mt-2">
-          Learn HTML and CSS to build responsive websites.
-        </p>
-      </div>
+                    <p className="text-gray-500 text-[10px] mt-2">
+                      The beginners courses to be a pro. in javascript
+                    </p>
+                  </div>
 
-      <div className="shrink-0">
-        <h3 className="text-base font-bold text-black">₦50,000</h3>
+                  <div className="shrink-0">
+                    <h3 className="text-base font-bold text-black">₦50,000</h3>
 
-        <div className="flex items-center gap-1">
-          <span className="bg-orange-500 text-white text-[8px] p-1 rounded">
-            50% OFF
-          </span>
+                    <div className="flex items-center gap-1">
+                      <span className="bg-orange-500 text-white text-[8px] p-1 rounded">
+                        50% OFF
+                      </span>
 
-          <p className="text-[9px] line-through">₦100,000</p>
-        </div>
-      </div>
-    </div>
+                      <p className="text-[9px] line-through">₦100,000</p>
+                    </div>
+                  </div>
+                </div>
 
-    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-5 text-[10px] text-black">
-      <p>✓ HTML5</p>
-      <p>✓ CSS3</p>
-      <p>✓ Flexbox</p>
-      <p>✓ Grid</p>
-      <p>✓ Responsive</p>
-      <p>✓ Animations</p>
-    </div>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-5 text-[10px] text-black">
+                  <p>✓ Data fetching</p>
+                  <p>✓ Variable</p>
+                  <p>✓ Mapping</p>
+                  <p>✓ Looping</p>
+                  <p>✓ JSON</p>
+                  <p>✓ Data object</p>
+                </div>
 
-    <ul className="flex flex-wrap justify-between gap-2 text-[10px] text-black mb-5 w-full">
-      <li>• Beginners</li>
-      <li>• 3 Weeks</li>
-      <li>• MON - FRI</li>
-    </ul>
+                <ul className="flex flex-wrap justify-between gap-2 text-[10px] text-black mb-5 w-full">
+                  <li>• Beginners</li>
+                  <li>• 3 Weeks</li>
+                  <li>• MON - FRI</li>
+                </ul>
 
-    <div className="flex flex-wrap justify-end gap-2">
-      <button className="bg-orange-500 text-white text-[10px] px-4 py-2 rounded-full">
-        Request quote
-      </button>
+                <div className="flex flex-wrap justify-end gap-4">
+                  <button className="bg-orange-500 text-white text-[10px] px-4 py-2 rounded-full">
+                    Request quote
+                  </button>
 
-      <button className="bg-black text-white text-[10px] px-5 py-2 rounded-full">
-        Start course
-      </button>
-    </div>
+                  <button className="bg-black text-white text-[10px] px-5 py-2 rounded-full">
+                    Start course
+                  </button>
+                </div>
 
-  </div>
-</div>
+              </div>
+            </div>
 
 
-<div className="flex flex-col md:flex-row items-center mb-12">
+            <div className="flex flex-col md:flex-row items-center mb-12">
 
-  <div className="w-full md:w-[44%] shrink-0">
-    <Image
-      src={reacthtml}
-      alt="React and Hooks Course"
-      className="w-full h-[220px] sm:h-[250px] md:h-[270px] object-cover rounded-xl"
-    />
-  </div>
+              <div className="w-full md:w-[44%] shrink-0">
+                <Image
+                  src={Restapi}
+                  alt="Restapi"
+                  className="w-full h-[220px] sm:h-[250px] md:h-[270px] object-cover rounded-xl"
+                />
+              </div>
 
-  <div className="relative z-10 -mt-6 md:mt-5 md:-ml-10 md:mr-5 w-[85%] md:w-[52%] top-6 min-w-0 bg-white p-5 rounded-xl shadow-md">
+              <div className="relative z-10 -mt-6 md:mt-5 md:-ml-10 md:mr-5 w-[85%] md:w-[52%] top-6 min-w-0 bg-white p-5 rounded-xl shadow-md">
 
-    <div className="flex flex-col sm:flex-row justify-between gap-4 mb-4">
-      <div>
-        <h3 className="text-base font-bold text-black">
-          Fundamental React <br /> & Hooks
-        </h3>
+                <div className="flex flex-col sm:flex-row justify-between gap-4 mb-4">
 
-        <p className="text-gray-500 text-[10px] mt-2">
-          Learn React and Hooks to build modern web applications.
-        </p>
-      </div>
+                  <div>
+                    <h3 className="text-base font-extrabold text-black">
+                      Basic Node <br /> and Express
+                    </h3>
 
-      <div className="shrink-0">
-        <h3 className="text-base font-bold text-black">₦50,000</h3>
+                    <p className="text-gray-500 text-[10px] mt-2">
+                      The beginners courses to be a pro. in javascript
+                    </p>
+                  </div>
 
-        <div className="flex items-center gap-1">
-          <span className="bg-orange-500 text-white text-[8px] p-1 rounded">
-            50% OFF
-          </span>
+                  <div className="shrink-0">
+                    <h3 className="text-base font-bold text-black">₦50,000</h3>
 
-          <p className="text-[9px] line-through">₦100,000</p>
-        </div>
-      </div>
-    </div>
+                    <div className="flex items-center gap-1">
+                      <span className="bg-orange-500 text-white text-[8px] p-1 rounded">
+                        50% OFF
+                      </span>
 
-    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-5 text-[10px] text-black">
-      <p>✓ Components</p>
-      <p>✓ Props</p>
-      <p>✓ useState</p>
-      <p>✓ useEffect</p>
-      <p>✓ React Hooks</p>
-      <p>✓ API Fetching</p>
-    </div>
+                      <p className="text-[9px] line-through">₦100,000</p>
+                    </div>
+                  </div>
 
-    <ul className="flex flex-wrap justify-between gap-2 text-[10px] text-black mb-5 w-full">
-      <li>• Beginners</li>
-      <li>• 3 Weeks</li>
-      <li>• MON - FRI</li>
-    </ul>
+                </div>
 
-    <div className="flex flex-wrap justify-end gap-2">
-      <button className="bg-orange-500 text-white text-[10px] px-4 py-2 rounded-full">
-        Request quote
-      </button>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-5 text-[10px] text-black">
+                  <p>✓ Data fetching</p>
+                  <p>✓ Variable</p>
+                  <p>✓ Mapping</p>
+                  <p>✓ Looping</p>
+                  <p>✓ JSON</p>
+                  <p>✓ Data object</p>
+                </div>
 
-      <button className="bg-black text-white text-[10px] px-5 py-2 rounded-full">
-        Start course
-      </button>
-    </div>
+                <ul className="flex flex-wrap justify-between gap-2 text-[10px] text-black mb-5 w-full">
+                  <li>• Beginners</li>
+                  <li>• 3 Weeks</li>
+                  <li>• MON - FRI</li>
+                </ul>
 
-  </div>
-</div>
+                <div className="flex flex-wrap justify-end gap-4">
+                  <button className="bg-orange-500 text-white text-[10px] px-4 py-2 rounded-full">
+                    Request quote
+                  </button>
+
+                  <button className="bg-black text-white text-[10px] px-5 py-2 rounded-full">
+                    Start course
+                  </button>
+                </div>
+
+              </div>
+            </div>
       </section>
       <section className="bg-[#111111] px-[6%] md:px-[9%] py-16 md:py-20">
         <div className="text-center mb-16">
@@ -376,7 +384,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="bg-white px-[6%] md:px-[11%] py-12">
+      <section className="bg-white px-[6%] md:px-[11%] py-12 flex flex-col justify-center items-center">
         <div className="text-center mb-12">
           <h2 className="text-black text-2xl font-bold">
             Steps to get started
@@ -387,7 +395,7 @@ const page = () => {
             Explore the unique benefits that set us apart and pave the way for your success.
           </p>
         </div>
- <div className="flex flex-col md:flex-row justify-center items-center gap-8 w-full">
+     <div className="flex flex-col md:flex-row justify-center items-center gap-8 w-full">
                 <div>
                     <div className="flex items-center gap-3">
                     <h3 className="text-gray-300 text-6xl font-bold">
