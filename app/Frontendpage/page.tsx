@@ -411,7 +411,7 @@ const page = () => {
             Explore the unique benefits that set us apart and pave the way for your success.
           </p>
         </div>
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-x-3 gap-y-5 items-start">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-x-3 gap-y-5 items-start">
           <div>
             <div className="relative">
               <Image
