@@ -1,6 +1,8 @@
 "use client"
+
 import React, { useState } from "react"
 import Image from 'next/image'
+
 import brand from '../../image/Frame 13.png'
 import group19 from '../../image/Group 19.png'
 import group20 from '../../image/Group 20.png'
@@ -9,6 +11,7 @@ import group22 from '../../image/Group 22.png'
 import group23 from '../../image/Group 23.png'
 import group18 from '../../image/Group 18.png'
 import thick from '../../image/tabler-icon-circle-check-filled.png'
+
 import frame44 from '../../image/Frame 44.png'
 import frame43 from '../../image/Frame 43.png'
 import frame42 from '../../image/Frame 42.png'
@@ -16,764 +19,1416 @@ import frame41 from '../../image/Frame 41.png'
 import frame40 from '../../image/Frame 40.png'
 import frame39 from '../../image/Frame 39.png'
 import frame47 from '../../image/Frame 47.png'
+
 import group4 from '../../image/Group 4.png'
 import group4a from '../../image/Group 4 (1).png'
 
 
 const Page = () => {
-  const [faqOpen,setfaqOpen] = useState(false) 
+
+  const [faqOpen, setfaqOpen] = useState(false)
 
   return (
-    <section className='bg-white flex flex-col w-full h-auto items-center'>
 
-      <div className='mt-10 flex flex-col items-center space-y-10  brand-section'>
-        <p className='text-black font-semibold'>
+    <section className='bg-white flex flex-col w-full min-h-screen items-center overflow-hidden'>
+
+
+      {/* ================================
+          BRAND SECTION
+      ================================= */}
+
+      <div className='mt-10 md:mt-14 flex flex-col items-center space-y-6 md:space-y-10 brand-section'>
+
+        <p className='text-black font-semibold text-sm md:text-base text-center'>
           Loved by brands and partners
         </p>
 
         <Image
           src={brand}
           alt="brand"
-          className='h-auto w-[50vw] brand-image'
+          className='h-auto w-[85vw] sm:w-[70vw] md:w-[50vw] brand-image'
         />
+
       </div>
 
-      <div className='flex flex-col mt-20 w-[40vw] intro-section'>
-        <p className='text-black font-extrabold text-[30px] text-center'>
+
+
+      {/* ================================
+          INTRO SECTION
+      ================================= */}
+
+      <div className='flex flex-col mt-16 md:mt-20 w-[90vw] sm:w-[75vw] md:w-[40vw] intro-section'>
+
+        <p className='text-black font-extrabold text-[24px] sm:text-[28px] md:text-[30px] text-center leading-tight'>
+
           Elevate Your Skills,
+
           <br />
+
           Transform Your Future
+
         </p>
 
-        <p className='text-gray-700 text-[12px] text-center'>
+        <p className='text-gray-700 text-[11px] sm:text-[12px] text-center mt-3 leading-5'>
+
           At Toshconsult, we are committed to shaping your tech skills and
           empowering your career. Explore the unique benefits that set us apart
           and pave the way for your success.
+
         </p>
+
       </div>
 
-      <div className='mt-20 grid grid-cols-3 w-[70vw] justify-between space-y-16 benefits-section'>
 
-        <div className='flex space-x-5 benefit-card'>
+
+      {/* ================================
+          BENEFITS
+      ================================= */}
+
+      <div className='mt-14 md:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12 w-[88vw] md:w-[70vw] benefits-section'>
+
+
+        {/* BENEFIT 1 */}
+
+        <div className='flex space-x-4 items-start benefit-card'>
+
           <Image
             src={group19}
             alt='gp19'
-            className='h-10 w-auto benefit-icon'
+            className='h-9 md:h-10 w-auto benefit-icon'
           />
 
-          <div className="w-[15vw]">
-            <p className="text-black font-bold">
+          <div className='w-full'>
+
+            <p className='text-black font-bold text-sm'>
               Expert Guidance
             </p>
 
-            <p className="text-gray-500 text-[10px] font-light leading-4 mt-1">
+            <p className='text-gray-500 text-[10px] font-light leading-4 mt-1'>
               Learn from Industry Professionals Dedicated to Your Success
             </p>
+
           </div>
+
         </div>
 
-        <div className='flex space-x-5'>
+
+
+        {/* BENEFIT 2 */}
+
+        <div className='flex space-x-4 items-start benefit-card'>
+
           <Image
             src={group20}
             alt='gp20'
-            className='h-10 w-auto benefit-icon'
+            className='h-9 md:h-10 w-auto benefit-icon'
           />
 
-          <div className="w-[15vw]">
-            <p className="text-black font-bold leading-4">
+          <div className='w-full'>
+
+            <p className='text-black font-bold text-sm leading-4'>
               Hands-on Experience
             </p>
 
-            <p className="text-gray-500 text-[10px] font-light leading-4 mt-1">
+            <p className='text-gray-500 text-[10px] font-light leading-4 mt-1'>
               Apply Your Skills to Practical, Hands-on Projects for Deep Learning
             </p>
+
           </div>
+
         </div>
 
-        <div className='flex space-x-5'>
+
+
+        {/* BENEFIT 3 */}
+
+        <div className='flex space-x-4 items-start benefit-card'>
+
           <Image
             src={group21}
             alt='gp21'
-            className='h-10 w-auto benefit-icon'
+            className='h-9 md:h-10 w-auto benefit-icon'
           />
 
-          <div className="w-[16vw]">
-            <p className="text-black font-bold leading-4">
+          <div className='w-full'>
+
+            <p className='text-black font-bold text-sm leading-4'>
               Personalized Learning
             </p>
 
-            <p className="text-gray-500 text-[10px] font-light leading-4 mt-1">
+            <p className='text-gray-500 text-[10px] font-light leading-4 mt-1'>
               Customized Learning Paths to Match Your Learning Pace and Goals
             </p>
+
           </div>
+
         </div>
 
-        <div className='flex space-x-5'>
+
+
+        {/* BENEFIT 4 */}
+
+        <div className='flex space-x-4 items-start benefit-card'>
+
           <Image
             src={group22}
             alt='gp22'
-            className='h-10 w-auto benefit-icon'
+            className='h-9 md:h-10 w-auto benefit-icon'
           />
 
-          <div className="w-[15vw]">
-            <p className="text-black font-bold leading-4">
+          <div className='w-full'>
+
+            <p className='text-black font-bold text-sm'>
               Industry Relevance
             </p>
 
-            <p className="text-gray-500 text-[10px] font-light leading-4 mt-1">
+            <p className='text-gray-500 text-[10px] font-light leading-4 mt-1'>
               Stay Ahead with the Latest Technologies and Industry Trends
             </p>
+
           </div>
+
         </div>
 
-        <div className='flex space-x-5'>
+
+
+        {/* BENEFIT 5 */}
+
+        <div className='flex space-x-4 items-start benefit-card'>
+
           <Image
             src={group23}
             alt='gp23'
-            className='h-10 w-auto benefit-icon'
+            className='h-9 md:h-10 w-auto benefit-icon'
           />
 
-          <div className="w-[16vw]">
-            <p className="text-black font-bold leading-4">
+          <div className='w-full'>
+
+            <p className='text-black font-bold text-sm'>
               Career Support
             </p>
 
-            <p className="text-gray-500 text-[10px] font-light leading-4 mt-1">
+            <p className='text-gray-500 text-[10px] font-light leading-4 mt-1'>
               Boost Your Career with Our Exclusive Job Placement Support
             </p>
+
           </div>
+
         </div>
 
-        <div className='flex space-x-5'>
+
+
+        {/* BENEFIT 6 */}
+
+        <div className='flex space-x-4 items-start benefit-card'>
+
           <Image
             src={group18}
             alt='gp18'
-            className='h-10 w-auto benefit-icon'
+            className='h-9 md:h-10 w-auto benefit-icon'
           />
 
-          <div className="w-[16vw]">
-            <p className="text-black font-bold leading-4">
+          <div className='w-full'>
+
+            <p className='text-black font-bold text-sm'>
               Community Engagement
             </p>
 
-            <p className="text-gray-500 text-[10px] font-light leading-4 mt-1">
+            <p className='text-gray-500 text-[10px] font-light leading-4 mt-1'>
               Connect with Peers, Collaborate on Projects, and Expand Your Network
             </p>
+
           </div>
+
         </div>
+
       </div>
 
-      <div className='w-[35vw] text-center courses-title'>
-        <p className='text-black font-extrabold text-[30px]'>
+
+
+      {/* ================================
+          COURSES TITLE
+      ================================= */}
+
+      <div className='w-[88vw] sm:w-[70vw] md:w-[35vw] text-center courses-title mt-16 md:mt-20'>
+
+        <p className='text-black font-extrabold text-[24px] sm:text-[28px] md:text-[30px] leading-tight'>
+
           Best courses available to choose
+
         </p>
 
-        <p className='text-gray-600 text-[9px] font-semibold'>
-          At Toshconsult, we are committed to shaping your tech skills and empowering your career.
-          Explore the unique benefits that set us apart and pave the way for your succest.
+        <p className='text-gray-600 text-[9px] sm:text-[10px] font-semibold mt-3 leading-4'>
+
+          At Toshconsult, we are committed to shaping your tech skills and
+          empowering your career. Explore the unique benefits that set us apart
+          and pave the way for your success.
+
         </p>
+
       </div>
 
-      <div className=' flex flex-col h-auto m-20 space-y-5'>
 
-        <div className='flex flex-row space-x-5 course-row'>
+          {/* ================================
+              COURSES
+          ================================= */}
 
-          <div className='bg-fuchsia-100 w-[40vw] h-[73vh] rounded-t-xl p-7 course-card'>
+          <div className='flex flex-col items-center h-auto my-[8vh] w-full space-y-[3vh]'>
 
-            <div className='w-[30vw] space-y-2'>
-              <p className='text-black font-bold text-[25px]'>
-                Frontend Development Masterclass
-              </p>
 
-              <p className='text-gray-500 text-[12px]'>
-                Dive into the world of frontend developrint. Leorn HTML CSS, and
-                JavaSaript. Master popular framewarks like React and Vue.js. Create
-                responsive, user-friendly Interfocos.
-              </p>
-            </div>
+            {/* ================================
+                ROW 1
+            ================================= */}
 
-            <div className='grid grid-cols-2 mt-5 gap-2'>
+            <div className='flex flex-col md:flex-row justify-center items-center gap-[2vw] w-full course-row'>
 
-              <div className='flex flex-col'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Curriculum
-                </p>
 
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                    02 SEPT Batches
+              {/* FRONTEND */}
+
+              <div className='bg-fuchsia-100 w-[90vw] md:w-[40vw] h-auto md:h-[73vh] rounded-t-xl p-[3vw] md:p-[2vw] course-card'>
+
+                <div className='w-full md:w-[30vw] space-y-[1vh]'>
+
+                  <p className='text-black font-bold text-[5vw] sm:text-[3vw] md:text-[2vw] leading-tight'>
+
+                    Frontend Development Masterclass
+
                   </p>
-                </div>
-              </div>
 
-              <div className='flex flex-col'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Learning time
-                </p>
+                  <p className='text-gray-500 text-[2.8vw] sm:text-[1.8vw] md:text-[0.8vw] leading-[2.5vh]'>
 
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                      MON - FRI
+                    Dive into the world of frontend development. Learn HTML CSS,
+                    and JavaScript. Master popular frameworks like React and Vue.js.
+                    Create responsive, user-friendly interfaces.
+
                   </p>
+
                 </div>
 
-              </div>
-              <div className='flex flex-col'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Lesson time
-                </p>
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                      Duration
-                  </p>
-                </div>
-              </div>
-            </div>
-            <button className="bg-black text-white px-4 py-1.5 rounded-full font-semibold hover:bg-gray-800 transition mt-[14%] course-button">
-              Get Started
-            </button>
-          </div>
-          <div className='bg-amber-200 w-[30vw] h-[73vh] rounded-t-xl p-5 course-card'>
-               <div className='w-[20vw] space-y-2'>
-              <p className='text-black font-bold text-[25px]'>
-                Backend Development Course
-              </p>
 
-              <p className='text-gray-500 text-[12px]'>
-                Explere server-side behnolgius, databases and
-                Nodo.js. Ruby on Rgls, or Diango, Bulld robust
-                Noce.js, Ruby on kls, ar bjango. Build robus
-                backend systems for web applicotions.
-              </p>
-            </div>
+                <div className='grid grid-cols-2 mt-[4vh] gap-[2vw]'>
 
-            <div className='grid grid-cols-2 mt-5 gap-2'>
 
-              <div className='flex flex-col w-[20vw]'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Curriculum
-                </p>
+                  <div className='flex flex-col'>
 
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                    02 SEPT Batches
-                  </p>
-                </div>
-              </div>
-
-              <div className='flex flex-col ml-3'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Learning time
-                </p>
-
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                      Weekend
-                  </p>
-                </div>
-
-              </div>
-              <div className='flex flex-col'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Lesson time
-                </p>
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                      Duration
-                  </p>
-                </div>
-              </div>
-            </div>
-            <button className="bg-black text-white px-4 py-1.5 rounded-full font-semibold hover:bg-gray-800 transition mt-12 course-button">
-              Get Started
-            </button>
-          </div>
-          </div>
-          <div className='flex flex-row space-x-5'>
-           
-            <div className='bg-amber-200 w-[30vw] h-[73vh] p-5 course-card'>
-               <div className='w-[20vw] space-y-2'>
-              <p className='text-black font-bold text-[25px]'>
-               Mobile App Development Course
-              </p>
-
-              <p className='text-gray-500 text-[12px]'>
-                Develop Android and iOS apps from scratch.
-                learn mobile UI/UX design principles. Work with
-                frameworks like React Native or Flutter. Launch
-                your apps on app stores
-              </p>
-            </div>
-
-            <div className='grid grid-cols-2 mt-5 gap-2'>
-
-              <div className='flex flex-col w-[20vw]'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Curriculum
-                </p>
-
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                    02 SEPT Batches
-                  </p>
-                </div>
-              </div>
-
-              <div className='flex flex-col ml-3'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Learning time
-                </p>
-
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                      Weekend
-                  </p>
-                </div>
-
-              </div>
-              <div className='flex flex-col'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Lesson time
-                </p>
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                      Duration
-                  </p>
-                </div>
-              </div>
-            </div>
-            <button className="bg-black text-white px-4 py-1.5 rounded-full font-semibold hover:bg-gray-800 transition mt-14 course-button">
-              Get Started
-            </button>
-          </div>
-            
-          <div className='bg-fuchsia-100 w-[40vw] h-[73vh]  p-7 course-card'>
-
-            <div className='w-[30vw] space-y-2'>
-              <p className='text-black font-bold text-[25px]'>
-                Python Fullstack Development Course
-              </p>
-
-              <p className='text-gray-500 text-[12px]'>
-               Combine Python's versatility with frontend and backend technologies,
-               build dynamic websites using frameworks like Django and Flask. Develop
-              interactive user interfoces with JavaScript.
-              </p>
-            </div>
-
-            <div className='grid grid-cols-2 mt-5 gap-2'>
-
-              <div className='flex flex-col'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Curriculum
-                </p>
-
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                    02 SEPT Batches
-                  </p>
-                </div>
-              </div>
-
-              <div className='flex flex-col'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Learning time
-                </p>
-
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                      MON - FRI
-                  </p>
-                </div>
-
-              </div>
-              <div className='flex flex-col'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Lesson time
-                </p>
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                      Duration
-                  </p>
-                </div>
-              </div>
-            </div>
-            <button className="bg-black text-white px-4 py-1.5 rounded-full font-semibold hover:bg-gray-800 transition mt-[14%] course-button">
-              Get Started
-            </button>
-          </div>
-          </div>
-          <div className='flex flex-row space-x-5'>
-
-          <div className='bg-fuchsia-100 w-[40vw] h-[73vh] p-7 course-card'>
-
-            <div className='w-[30vw] space-y-2'>
-              <p className='text-black font-bold text-[25px]'>
-               JavaScript Fullstack Development Course
-              </p>
-
-              <p className='text-gray-500 text-[12px]'>
-               Become proficient in both frontend and backend JavaScript
-                technologies. Leam Node.js for server side development. Use React or
-                Angular for building madern, dynamic interfaces.
-              </p>
-            </div>
-
-            <div className='grid grid-cols-2 mt-5 gap-2'>
-
-              <div className='flex flex-col'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Curriculum
-                </p>
-
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                    02 SEPT Batches
-                  </p>
-                </div>
-              </div>
-
-              <div className='flex flex-col'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Learning time
-                </p>
-
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                      MON - FRI
-                  </p>
-                </div>
-
-              </div>
-              <div className='flex flex-col'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Lesson time
-                </p>
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                      Duration
-                  </p>
-                </div>
-              </div>
-            </div>
-            <button className="bg-black text-white px-4 py-1.5 rounded-full font-semibold hover:bg-gray-800 transition mt-[14%] course-button">
-              Get Started
-            </button>
-          </div>
-          <div className='bg-amber-200 w-[30vw] h-[73vh] p-5 course-card'>
-               <div className='w-[20vw] space-y-2'>
-              <p className='text-black font-bold text-[25px] w-[22vw]'>
-                UI/UX Design Fundamentals Course
-              </p>
-
-              <p className='text-gray-500 text-[12px]'>
-                Master the art of user-centered design. Learn wireframing, prototypin 
-                and user testing. 
-                Explore tools like Sketch and Adobe XD, Craft 
-                seamless and intuitive user experiences.
-              </p>
-            </div>
-
-            <div className='grid grid-cols-2 mt-5 gap-2'>
-
-              <div className='flex flex-col w-[20vw]'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Curriculum
-                </p>
-
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                    02 SEPT Batches
-                  </p>
-                </div>
-              </div>
-
-              <div className='flex flex-col ml-3'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Learning time
-                </p>
-
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                      Weekend
-                  </p>
-                </div>
-
-              </div>
-              <div className='flex flex-col'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Lesson time
-                </p>
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                      Duration
-                  </p>
-                </div>
-              </div>
-            </div>
-            <button className="bg-black text-white px-4 py-1.5 rounded-full font-semibold hover:bg-gray-800 transition mt-12 course-button">
-              Get Started
-            </button>
-          </div>
-          </div>
-          <div className='flex flex-row space-x-5'>
-           
-           <div className='bg-amber-200 w-[30vw] h-[73vh] rounded-b-xl p-6 course-card'>
-               <div className='w-[20vw] space-y-2'>
-              <p className='text-black font-bold text-[25px]'>
-                Digital Marketing Course
-              </p>
-
-              <p className='text-gray-500 text-[12px] w-[23vw]'>
-                Unlock the power of onling marketing. Learn SEO, social media
-                 marketing, email marketing, and PPC 
-                 advertising. Analyze data, create compelling
-                campaigns, and boost online presence.
-              </p>
-            </div>
-
-            <div className='grid grid-cols-2 mt-5 gap-2'>
-
-              <div className='flex flex-col w-[20vw]'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Curriculum
-                </p>
-
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                    02 SEPT Batches
-                  </p>
-                </div>
-              </div>
-
-              <div className='flex flex-col ml-3'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Learning time
-                </p>
-
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                      Weekend
-                  </p>
-                </div>
-
-              </div>
-              <div className='flex flex-col'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Lesson time
-                </p>
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                      Duration
-                  </p>
-                </div>
-              </div>
-            </div>
-            <button className="bg-black text-white px-4 py-1.5 rounded-full font-semibold hover:bg-gray-800 transition mt-12 course-button">
-              Coming soon
-            </button>
-          </div>
-
-          <div className='bg-fuchsia-100 w-[40vw] h-[73vh] rounded-b-xl p-7 course-card'>
-
-            <div className='w-[30vw] space-y-2'>
-              <p className='text-black font-bold text-[25px] w-[20vw]'>
-               Wordpress Development Course
-              </p>
-
-              <p className='text-gray-500 text-[12px]'>
-                Master Wordpress from basics to advanced customization. Create
-                responsive and SEO-friendly websites. Explore theme development,
-                plugins, and e-commerce integration.
-              </p>
-            </div>
-
-            <div className='grid grid-cols-2 mt-5 gap-2'>
-
-              <div className='flex flex-col'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Curriculum
-                </p>
-
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                    02 SEPT Batches
-                  </p>
-                </div>
-              </div>
-
-              <div className='flex flex-col'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Learning time
-                </p>
-
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                      MON - FRI
-                  </p>
-                </div>
-
-              </div>
-              <div className='flex flex-col'>
-                <p className='text-[12px] text-gray-600 font-light'>
-                  Lesson time
-                </p>
-                <div className='flex flex-row mt-1 items-center gap-2'>
-                  <Image src={thick} alt='thick'/>
-                  <p className='font-bold text-black'>
-                      Duration
-                  </p>
-                </div>
-              </div>
-            </div>
-            <button className="bg-black text-white px-4 py-1.5 rounded-full font-semibold hover:bg-gray-800 transition mt-[13%] course-button">
-              Coming soon
-            </button>
-          </div>
-          </div>
-        </div>
-        <div className='w-[35vw] flex flex-col space-y-5'>
-          <p className='text-[30px] text-black font-extrabold text-center leading-12'>
-            Enrich your business with our expert sofware solutions
-          </p>
-          <p className='text-[11px] text-black text-center font-light'>
-            At Toshconsult, we are committed to shaping your tech skills and empowering your career. Explore the unique benefits that set us apart and pave the way for your success.
-          </p>
-        </div>
-     <div className='w-[70vw] h-[60vh] bg-pink-200 rounded-3xl mt-16 flex flex-col items-center justify-center gap-7 shadow-2xl shadow-pink-300'>
-
-              {/* TOP 3 */}
-              <div className='flex flex-row items-center justify-center gap-4'>
-                <Image 
-                  src={frame43} 
-                  alt='frame43' 
-                  className='h-[14vh] w-auto'
-                />
-
-                <Image 
-                  src={frame42} 
-                  alt='frame42' 
-                  className='h-[14vh] w-auto'
-                />
-
-                <Image 
-                  src={frame41} 
-                  alt='frame41' 
-                  className='h-[14vh] w-auto'
-                />
-              </div>
-
-              {/* BOTTOM 3 */}
-              <div className='flex flex-row items-center justify-center gap-6'>
-                <Image 
-                  src={frame39} 
-                  alt='frame39' 
-                  className='h-[14vh] w-auto'
-                />
-
-                <Image 
-                  src={frame40} 
-                  alt='frame40' 
-                  className='h-[14vh] w-auto'
-                />
-
-                <Image 
-                  src={frame44} 
-                  alt='frame44' 
-                  className='h-[13vh] w-auto'
-                />
-              </div>
-            </div>
-            <div className='w-[35vw] flex flex-col space-y-5 mt-10'>
-              <p className='text-[30px] text-black font-extrabold text-center leading-12'>
-                What our students are saying about us
-              </p>
-              <p className='text-[11px] text-black text-center font-light'>
-                    At Toshconsult, we are committed to shaping your tech skills and empowering your career. Explore the unique benefits that set us apart and pave the way for your success.
-              </p>
-            </div>
-            <div className='mt-10 w-[50vw] h-[40vh] bg-amber-50 shadow-2xl shadow-black rounded-2xl p-10'>
-              <p  className='text-black text-[20px]'>
-                  “At Toshconsult, we are committed to shaping your tech skills and empowering your career. Explore the unique benefits that set us apart and pave the way for your success.”
-              </p>
-              <Image src={frame47} alt='frame47' className='mt-10 h-10 w-auto' />
-            </div>
-            <div>
-            <div className='w-[35vw] flex flex-col space-y-5 mt-10 items-center'>
-                    <p className='text-[30px] text-black font-extrabold text-center leading-12'>
-                     Frequently asked question
-                    </p>
-                    <p className='text-[11px] text-black text-center font-light'>
-                          At Toshconsult, we are committed to shaping your tech skills and empowering your career. Explore the unique benefits that set us apart and pave the way for your success.
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Curriculum
                     </p>
 
-                    <div className='w-[40vw] flex flex-col mb-10'>
+                    <div className='flex flex-row mt-[1vh] items-center gap-[0.5vw]'>
 
-                        <div className='flex flex-row justify-between items-center'>
-                          
-                          <div className='flex flex-row gap-5 items-center'>
-                            <p className='text-black text-2xl'>
-                              01.
-                            </p>
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
 
-                            <p className='text-black text-[15px]'>
-                              Frequently asked question
-                            </p>
-                          </div>
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        02 SEPT Batches
+                      </p>
 
-                          <Image
-                            src={faqOpen ? group4a : group4}
-                            alt="faq"
-                            className="h-5 w-auto cursor-pointer"
-                            onClick={() => setfaqOpen(!faqOpen)}
-                          />
+                    </div>
 
-                        </div>
-                        {faqOpen && (
-                          <p className='text-gray-500 text-sm mt-4'>
-                            At Toshconsult, we are committed to shaping your tech skills and
-                            empowering your career. Explore the unique benefits that set us apart
-                            and pave the way for your success.
-                          </p>
-                        )}
-                      </div>
-            </div>
-            </div>
-            <div className="w-full h-[50vh] bg-purple-200 flex flex-col justify-center items-center gap-5">
+                  </div>
 
-                <p className="w-[25vw] text-black text-4xl font-extrabold text-center">
-                     Ready to Dive In? Enroll Now!
-                </p>
-                <button className="h-7 w-[7vw] text-[10px] rounded-2xl flex justify-center items-center bg-orange-500 text-white  hover:bg-orange-600 transition duration-300 shadow-md cursor-pointer">
-                  Apply Now
+
+                  <div className='flex flex-col'>
+
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Learning time
+                    </p>
+
+                    <div className='flex flex-row mt-[1vh] items-center gap-[0.5vw]'>
+
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
+
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        MON - FRI
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+                  <div className='flex flex-col'>
+
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Lesson time
+                    </p>
+
+                    <div className='flex flex-row mt-[1vh] items-center gap-[0.5vw]'>
+
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
+
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        Duration
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <button className="bg-black text-white px-[2vw] py-[1vh] rounded-full font-semibold hover:bg-gray-800 transition mt-[8vh] md:mt-[14vh] course-button text-[2.5vw] md:text-[0.8vw]">
+
+                  Get Started
+
                 </button>
 
-              
+              </div>
+
+
+
+              {/* BACKEND */}
+
+              <div className='bg-amber-200 w-[90vw] md:w-[30vw] h-auto md:h-[73vh] rounded-t-xl p-[3vw] md:p-[2vw] course-card'>
+
+                <div className='w-full md:w-[20vw] space-y-[1vh]'>
+
+                  <p className='text-black font-bold text-[5vw] sm:text-[3vw] md:text-[2vw] leading-tight'>
+
+                    Backend Development Course
+
+                  </p>
+
+                  <p className='text-gray-500 text-[2.8vw] sm:text-[1.8vw] md:text-[0.8vw] leading-[2.5vh]'>
+
+                    Explore server-side technologies, databases and Node.js.
+                    Build robust backend systems for web applications.
+
+                  </p>
+
+                </div>
+
+
+                <div className='grid grid-cols-2 mt-[4vh] gap-[2vw]'>
+
+                  <div className='flex flex-col'>
+
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Curriculum
+                    </p>
+
+                    <div className='flex flex-row mt-[1vh] items-center gap-[0.5vw]'>
+
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
+
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        02 SEPT Batches
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+                  <div className='flex flex-col'>
+
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Learning time
+                    </p>
+
+                    <div className='flex flex-row mt-[1vh] items-center gap-[0.5vw]'>
+
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
+
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        Weekend
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+                  <div className='flex flex-col'>
+
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Lesson time
+                    </p>
+
+                    <div className='flex flex-row mt-[1vh] items-center gap-[0.5vw]'>
+
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
+
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        Duration
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <button className="bg-black text-white px-[2vw] py-[1vh] rounded-full font-semibold hover:bg-gray-800 transition mt-[8vh] md:mt-[12vh] course-button text-[2.5vw] md:text-[0.8vw]">
+
+                  Get Started
+
+                </button>
+
+              </div>
 
             </div>
+
+
+
+            {/* ================================
+                ROW 2
+            ================================= */}
+
+            <div className='flex flex-col md:flex-row justify-center items-center gap-[2vw] w-full course-row'>
+
+
+              {/* MOBILE */}
+
+              <div className='bg-amber-200 w-[90vw] md:w-[30vw] h-auto md:h-[73vh] p-[3vw] md:p-[2vw] course-card'>
+
+                <div className='w-full md:w-[20vw] space-y-[1vh]'>
+
+                  <p className='text-black font-bold text-[5vw] sm:text-[3vw] md:text-[2vw] leading-tight'>
+
+                    Mobile App Development Course
+
+                  </p>
+
+                  <p className='text-gray-500 text-[2.8vw] sm:text-[1.8vw] md:text-[0.8vw] leading-[2.5vh]'>
+
+                    Develop Android and iOS apps from scratch.
+                    Learn mobile UI/UX design principles. Work with
+                    frameworks like React Native or Flutter. Launch
+                    your apps on app stores.
+
+                  </p>
+
+                </div>
+
+
+                <div className='grid grid-cols-2 mt-[4vh] gap-[2vw]'>
+
+                  <div className='flex flex-col'>
+
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Curriculum
+                    </p>
+
+                    <div className='flex items-center gap-[0.5vw] mt-[1vh]'>
+
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
+
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        02 SEPT Batches
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+                  <div className='flex flex-col'>
+
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Learning time
+                    </p>
+
+                    <div className='flex items-center gap-[0.5vw] mt-[1vh]'>
+
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
+
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        Weekend
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+                  <div className='flex flex-col'>
+
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Lesson time
+                    </p>
+
+                    <div className='flex items-center gap-[0.5vw] mt-[1vh]'>
+
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
+
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        Duration
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <button className="bg-black text-white px-[2vw] py-[1vh] rounded-full font-semibold hover:bg-gray-800 transition mt-[8vh] md:mt-[12vh] course-button text-[2.5vw] md:text-[0.8vw]">
+
+                  Get Started
+
+                </button>
+
+              </div>
+
+
+
+              {/* PYTHON */}
+
+              <div className='bg-fuchsia-100 w-[90vw] md:w-[40vw] h-auto md:h-[73vh] p-[3vw] md:p-[2vw] course-card'>
+
+                <div className='w-full md:w-[30vw] space-y-[1vh]'>
+
+                  <p className='text-black font-bold text-[5vw] sm:text-[3vw] md:text-[2vw] leading-tight'>
+
+                    Python Fullstack Development Course
+
+                  </p>
+
+                  <p className='text-gray-500 text-[2.8vw] sm:text-[1.8vw] md:text-[0.8vw] leading-[2.5vh]'>
+
+                    Combine Python's versatility with frontend and backend
+                    technologies. Build dynamic websites using frameworks like
+                    Django and Flask. Develop interactive user interfaces with
+                    JavaScript.
+
+                  </p>
+
+                </div>
+
+
+                <div className='grid grid-cols-2 mt-[4vh] gap-[2vw]'>
+
+                  <div className='flex flex-col'>
+
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Curriculum
+                    </p>
+
+                    <div className='flex items-center gap-[0.5vw] mt-[1vh]'>
+
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
+
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        02 SEPT Batches
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+                  <div className='flex flex-col'>
+
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Learning time
+                    </p>
+
+                    <div className='flex items-center gap-[0.5vw] mt-[1vh]'>
+
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
+
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        MON - FRI
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+                  <div className='flex flex-col'>
+
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Lesson time
+                    </p>
+
+                    <div className='flex items-center gap-[0.5vw] mt-[1vh]'>
+
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
+
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        Duration
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <button className="bg-black text-white px-[2vw] py-[1vh] rounded-full font-semibold hover:bg-gray-800 transition mt-[8vh] md:mt-[14vh] course-button text-[2.5vw] md:text-[0.8vw]">
+
+                  Get Started
+
+                </button>
+
+              </div>
+
+            </div>
+
+
+
+            {/* ================================
+                ROW 3
+            ================================= */}
+
+            <div className='flex flex-col md:flex-row justify-center items-center gap-[2vw] w-full course-row'>
+
+
+              {/* JAVASCRIPT */}
+
+              <div className='bg-fuchsia-100 w-[90vw] md:w-[40vw] h-auto md:h-[73vh] p-[3vw] md:p-[2vw] course-card'>
+
+                <div className='w-full md:w-[30vw] space-y-[1vh]'>
+
+                  <p className='text-black font-bold text-[5vw] sm:text-[3vw] md:text-[2vw] leading-tight'>
+
+                    JavaScript Fullstack Development Course
+
+                  </p>
+
+                  <p className='text-gray-500 text-[2.8vw] sm:text-[1.8vw] md:text-[0.8vw] leading-[2.5vh]'>
+
+                    Become proficient in both frontend and backend JavaScript
+                    technologies. Learn Node.js for server-side development.
+                    Use React or Angular for building modern, dynamic interfaces.
+
+                  </p>
+
+                </div>
+
+
+                <div className='grid grid-cols-2 mt-[4vh] gap-[2vw]'>
+
+                  <div className='flex flex-col'>
+
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Curriculum
+                    </p>
+
+                    <div className='flex items-center gap-[0.5vw] mt-[1vh]'>
+
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
+
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        02 SEPT Batches
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+                  <div className='flex flex-col'>
+
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Learning time
+                    </p>
+
+                    <div className='flex items-center gap-[0.5vw] mt-[1vh]'>
+
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
+
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        MON - FRI
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+                  <div className='flex flex-col'>
+
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Lesson time
+                    </p>
+
+                    <div className='flex items-center gap-[0.5vw] mt-[1vh]'>
+
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
+
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        Duration
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <button className="bg-black text-white px-[2vw] py-[1vh] rounded-full font-semibold hover:bg-gray-800 transition mt-[8vh] md:mt-[14vh] course-button text-[2.5vw] md:text-[0.8vw]">
+
+                  Get Started
+
+                </button>
+
+              </div>
+
+
+
+              {/* UI UX */}
+
+              <div className='bg-amber-200 w-[90vw] md:w-[30vw] h-auto md:h-[73vh] p-[3vw] md:p-[2vw] course-card'>
+
+                <div className='w-full md:w-[20vw] space-y-[1vh]'>
+
+                  <p className='text-black font-bold text-[5vw] sm:text-[3vw] md:text-[2vw] leading-tight'>
+
+                    UI/UX Design Fundamentals Course
+
+                  </p>
+
+                  <p className='text-gray-500 text-[2.8vw] sm:text-[1.8vw] md:text-[0.8vw] leading-[2.5vh]'>
+
+                    Master the art of user-centered design. Learn wireframing,
+                    prototyping and user testing. Explore tools like Sketch and
+                    Adobe XD. Craft seamless and intuitive user experiences.
+
+                  </p>
+
+                </div>
+
+
+                <div className='grid grid-cols-2 mt-[4vh] gap-[2vw]'>
+
+                  <div className='flex flex-col'>
+
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Curriculum
+                    </p>
+
+                    <div className='flex items-center gap-[0.5vw] mt-[1vh]'>
+
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
+
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        02 SEPT Batches
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+                  <div className='flex flex-col'>
+
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Learning time
+                    </p>
+
+                    <div className='flex items-center gap-[0.5vw] mt-[1vh]'>
+
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
+
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        Weekend
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+                  <div className='flex flex-col'>
+
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Lesson time
+                    </p>
+
+                    <div className='flex items-center gap-[0.5vw] mt-[1vh]'>
+
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
+
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        Duration
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <button className="bg-black text-white px-[2vw] py-[1vh] rounded-full font-semibold hover:bg-gray-800 transition mt-[8vh] md:mt-[12vh] course-button text-[2.5vw] md:text-[0.8vw]">
+
+                  Get Started
+
+                </button>
+
+              </div>
+
+            </div>
+
+
+
+            {/* ================================
+                ROW 4
+            ================================= */}
+
+            <div className='flex flex-col md:flex-row justify-center items-center gap-[2vw] w-full course-row'>
+
+
+              {/* DIGITAL MARKETING */}
+
+              <div className='bg-amber-200 w-[90vw] md:w-[30vw] h-auto md:h-[73vh] rounded-b-xl p-[3vw] md:p-[2vw] course-card'>
+
+                <div className='w-full md:w-[20vw] space-y-[1vh]'>
+
+                  <p className='text-black font-bold text-[5vw] sm:text-[3vw] md:text-[2vw] leading-tight'>
+
+                    Digital Marketing Course
+
+                  </p>
+
+                  <p className='text-gray-500 text-[2.8vw] sm:text-[1.8vw] md:text-[0.8vw] leading-[2.5vh]'>
+
+                    Unlock the power of online marketing. Learn SEO, social media
+                    marketing, email marketing, and PPC advertising. Analyze data,
+                    create compelling campaigns, and boost online presence.
+
+                  </p>
+
+                </div>
+
+
+                <div className='grid grid-cols-2 mt-[4vh] gap-[2vw]'>
+
+                  <div className='flex flex-col'>
+
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Curriculum
+                    </p>
+
+                    <div className='flex items-center gap-[0.5vw] mt-[1vh]'>
+
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
+
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        02 SEPT Batches
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+                  <div className='flex flex-col'>
+
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Learning time
+                    </p>
+
+                    <div className='flex items-center gap-[0.5vw] mt-[1vh]'>
+
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
+
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        Weekend
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+                  <div className='flex flex-col'>
+
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Lesson time
+                    </p>
+
+                    <div className='flex items-center gap-[0.5vw] mt-[1vh]'>
+
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
+
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        Duration
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <button className="bg-black text-white px-[2vw] py-[1vh] rounded-full font-semibold hover:bg-gray-800 transition mt-[8vh] md:mt-[12vh] course-button text-[2.5vw] md:text-[0.8vw]">
+
+                  Coming soon
+
+                </button>
+
+              </div>
+
+
+
+              {/* WORDPRESS */}
+
+              <div className='bg-fuchsia-100 w-[90vw] md:w-[40vw] h-auto md:h-[73vh] rounded-b-xl p-[3vw] md:p-[2vw] course-card'>
+
+                <div className='w-full md:w-[30vw] space-y-[1vh]'>
+
+                  <p className='text-black font-bold text-[5vw] sm:text-[3vw] md:text-[2vw] leading-tight'>
+
+                    Wordpress Development Course
+
+                  </p>
+
+                  <p className='text-gray-500 text-[2.8vw] sm:text-[1.8vw] md:text-[0.8vw] leading-[2.5vh]'>
+
+                    Master Wordpress from basics to advanced customization.
+                    Create responsive and SEO-friendly websites. Explore theme
+                    development, plugins, and e-commerce integration.
+
+                  </p>
+
+                </div>
+
+
+                <div className='grid grid-cols-2 mt-[4vh] gap-[2vw]'>
+
+                  <div className='flex flex-col'>
+
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Curriculum
+                    </p>
+
+                    <div className='flex items-center gap-[0.5vw] mt-[1vh]'>
+
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
+
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        02 SEPT Batches
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+                  <div className='flex flex-col'>
+
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Learning time
+                    </p>
+
+                    <div className='flex items-center gap-[0.5vw] mt-[1vh]'>
+
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
+
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        MON - FRI
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+                  <div className='flex flex-col'>
+
+                    <p className='text-[2.5vw] md:text-[0.8vw] text-gray-600 font-light'>
+                      Lesson time
+                    </p>
+
+                    <div className='flex items-center gap-[0.5vw] mt-[1vh]'>
+
+                      <Image
+                        src={thick}
+                        alt='thick'
+                        className='h-[2vh] w-auto'
+                      />
+
+                      <p className='font-bold text-black text-[2.5vw] md:text-[0.8vw]'>
+                        Duration
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <button className="bg-black text-white px-[2vw] py-[1vh] rounded-full font-semibold hover:bg-gray-800 transition mt-[8vh] md:mt-[13vh] course-button text-[2.5vw] md:text-[0.8vw]">
+
+                  Coming soon
+
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+      <div className='w-[88vw] sm:w-[70vw] md:w-[35vw] flex flex-col space-y-5 mt-5 md:mt-10'>
+
+        <p className='text-[24px] sm:text-[28px] md:text-[30px] text-black font-extrabold text-center leading-tight'>
+
+          Enrich your business with our expert software solutions
+
+        </p>
+
+        <p className='text-[10px] sm:text-[11px] text-black text-center font-light leading-5'>
+
+          At Toshconsult, we are committed to shaping your tech skills and
+          empowering your career. Explore the unique benefits that set us apart
+          and pave the way for your success.
+
+        </p>
+
+      </div>
+
+
+
+          <div className='
+            w-[90vw] sm:w-[82vw] md:w-[70vw]
+            h-[38vh] sm:h-[48vh] md:h-[60vh]
+            bg-pink-200
+            rounded-3xl
+            mt-[6vh] md:mt-[8vh]
+            flex flex-col
+            items-center
+            justify-center
+            gap-[3vh] sm:gap-[4vh] md:gap-[5vh]
+            shadow-2xl shadow-pink-300
+            px-[3vw]
+          '>
+
+            {/* TOP 3 */}
+
+            <div className='
+              flex flex-row
+              items-center
+              justify-center
+              gap-[2vw] sm:gap-[3vw] md:gap-[2vw]
+              w-full
+            '>
+
+              <Image
+                src={frame43}
+                alt='frame43'
+                className='
+                  w-[25vw] h-auto
+                  sm:w-[20vw]
+                  md:w-[15vw]
+                  max-h-[10vh] sm:max-h-[12vh] md:max-h-[14vh]
+                  object-contain
+                '
+              />
+
+              <Image
+                src={frame42}
+                alt='frame42'
+                className='
+                  w-[25vw] h-auto
+                  sm:w-[20vw]
+                  md:w-[15vw]
+                  max-h-[10vh] sm:max-h-[12vh] md:max-h-[14vh]
+                  object-contain
+                '
+              />
+
+              <Image
+                src={frame41}
+                alt='frame41'
+                className='
+                  w-[25vw] h-auto
+                  sm:w-[20vw]
+                  md:w-[15vw]
+                  max-h-[10vh] sm:max-h-[12vh] md:max-h-[14vh]
+                  object-contain
+                '
+              />
+
+            </div>
+
+
+            {/* BOTTOM 3 */}
+
+            <div className='
+              flex flex-row
+              items-center
+              justify-center
+              gap-[2vw] sm:gap-[3vw] md:gap-[2vw]
+              w-full
+            '>
+
+              <Image
+                src={frame39}
+                alt='frame39'
+                className='
+                  w-[25vw] h-auto
+                  sm:w-[20vw]
+                  md:w-[15vw]
+                  max-h-[10vh] sm:max-h-[12vh] md:max-h-[14vh]
+                  object-contain
+                '
+              />
+
+              <Image
+                src={frame40}
+                alt='frame40'
+                className='
+                  w-[25vw] h-auto
+                  sm:w-[20vw]
+                  md:w-[15vw]
+                  max-h-[10vh] sm:max-h-[12vh] md:max-h-[14vh]
+                  object-contain
+                '
+              />
+
+              <Image
+                src={frame44}
+                alt='frame44'
+                className='
+                  w-[20vw] h-auto
+                  sm:w-[16vw]
+                  md:w-[13vw]
+                  max-h-[8vh] sm:max-h-[10vh] md:max-h-[13vh]
+                  object-contain
+                '
+              />
+
+            </div>
+
+          </div>
+
+
+      <div className='w-[88vw] sm:w-[70vw] md:w-[35vw] flex flex-col space-y-5 mt-14 md:mt-16'>
+
+        <p className='text-[24px] sm:text-[28px] md:text-[30px] text-black font-extrabold text-center leading-tight'>
+
+          What our students are saying about us
+
+        </p>
+
+        <p className='text-[10px] sm:text-[11px] text-black text-center font-light leading-5'>
+
+          At Toshconsult, we are committed to shaping your tech skills and
+          empowering your career. Explore the unique benefits that set us apart
+          and pave the way for your success.
+
+        </p>
+
+      </div>
+
+
+
+      <div className='mt-10 w-[90vw] sm:w-[75vw] md:w-[50vw] min-h-[250px] md:h-[40vh] bg-amber-50 shadow-2xl shadow-black rounded-2xl p-6 md:p-10'>
+
+        <p className='text-black text-[16px] sm:text-[18px] md:text-[20px] leading-7'>
+
+          “At Toshconsult, we are committed to shaping your tech skills and
+          empowering your career. Explore the unique benefits that set us apart
+          and pave the way for your success.”
+
+        </p>
+
+        <Image
+          src={frame47}
+          alt='frame47'
+          className='mt-8 md:mt-10 h-8 md:h-10 w-auto'
+        />
+
+      </div>
+
+
+
+      {/* ================================
+          FAQ
+      ================================= */}
+
+      <div className='w-full flex flex-col items-center'>
+
+        <div className='w-[88vw] sm:w-[70vw] md:w-[35vw] flex flex-col space-y-5 mt-14 md:mt-16 items-center'>
+
+          <p className='text-[24px] sm:text-[28px] md:text-[30px] text-black font-extrabold text-center leading-tight'>
+
+            Frequently asked question
+
+          </p>
+
+          <p className='text-[10px] sm:text-[11px] text-black text-center font-light leading-5'>
+
+            At Toshconsult, we are committed to shaping your tech skills and
+            empowering your career. Explore the unique benefits that set us apart
+            and pave the way for your success.
+
+          </p>
+
+
+          {/* FAQ ITEM */}
+
+          <div className='w-full md:w-[40vw] flex flex-col mb-10 mt-5'>
+
+            <div className='flex flex-row justify-between items-center gap-4'>
+
+              <div className='flex flex-row gap-3 md:gap-5 items-center'>
+
+                <p className='text-black text-xl md:text-2xl'>
+                  01.
+                </p>
+
+                <p className='text-black text-[13px] md:text-[15px]'>
+                  Frequently asked question
+                </p>
+
+              </div>
+
+
+              <Image
+                src={faqOpen ? group4a : group4}
+                alt="faq"
+                className="h-5 w-auto cursor-pointer flex-shrink-0"
+                onClick={() => setfaqOpen(!faqOpen)}
+              />
+
+            </div>
+
+
+            {faqOpen && (
+
+              <p className='text-gray-500 text-[12px] md:text-sm mt-4 leading-5'>
+
+                At Toshconsult, we are committed to shaping your tech skills
+                and empowering your career. Explore the unique benefits that
+                set us apart and pave the way for your success.
+
+              </p>
+
+            )}
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      {/* ================================
+          CTA
+      ================================= */}
+
+      <div className="w-full min-h-[40vh] md:h-[50vh] bg-purple-200 flex flex-col justify-center items-center gap-5 px-5 mt-10">
+
+        <p className="w-full sm:w-[70vw] md:w-[25vw] text-black text-3xl sm:text-4xl font-extrabold text-center leading-tight">
+
+          Ready to Dive In? Enroll Now!
+
+        </p>
+
+        <button className="h-9 md:h-10 w-28 md:w-[7vw] text-[10px] rounded-2xl flex justify-center items-center bg-orange-500 text-white hover:bg-orange-600 transition duration-300 shadow-md cursor-pointer">
+
+          Apply Now
+
+        </button>
+
+      </div>
+
+
     </section>
   )
 }
