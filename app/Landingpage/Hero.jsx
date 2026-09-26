@@ -35,21 +35,20 @@ const Hero = () => {
         gap-[5vh]
         md:gap-[2vw]
       '>
-
-        <Image
-          src={img1}
-          alt='re'
-          className='
-            h-[25vh]
-            sm:h-[30vh]
-            md:h-[32vh]
-            lg:h-[35vh]
-            w-auto
-            hero-left
-            hero-float
-            object-contain
-          '
-        />
+      <Image
+        src={img1}
+        alt='re'
+        className='
+          h-[14vh]
+          sm:h-[18vh]
+          md:h-[22vh]
+          lg:h-[25vh]
+          w-auto
+          hero-left
+          hero-float
+          object-contain
+        '
+      />
 
         <div className='
           flex
@@ -83,12 +82,13 @@ const Hero = () => {
             sm:text-[5vw]
             md:text-[3.5vw]
             lg:text-[35px]
+            font-poppins
             text-center
             text-black
             font-extrabold
             leading-tight
           '>
-            Where Tech Dreams
+            Where Tech Dreams <br/>
             Take Flight!
           </p>
 
@@ -102,26 +102,27 @@ const Hero = () => {
             max-w-[80vw]
             md:max-w-[35vw]
           '>
-            Dive into the Future of Tech Education. Select Your Course, Apply Instantly,
+            Dive into the Future of Tech Education. Select Your Course, Apply Instantly, <br/>
             and Let's Begin the Transformation Journey Together!
           </p>
 
         </div>
 
-        <Image
-          src={img2}
-          alt='re'
-          className='
-            h-[25vh]
-            sm:h-[30vh]
-            md:h-[32vh]
-            lg:h-[35vh]
-            w-auto
-            hero-right
-            hero-float
-            object-contain
-          '
-        />
+      <Image
+        src={img2}
+        alt='re'
+        className='
+          h-[14vh]
+          sm:h-[18vh]
+          md:h-[22vh]
+          lg:h-[25vh]
+          w-auto
+          hero-left
+          hero-float
+          object-contain
+        '
+      />
+
 
       </div>
 
@@ -142,57 +143,65 @@ const Hero = () => {
         hero-bottom
       '>
 
-        <Image
-          src={img3}
-          alt='re'
-          className='
-            h-[22vh]
-            sm:h-[27vh]
-            md:h-[32vh]
-            lg:h-[35vh]
-            w-auto
-            object-contain
-          '
-        />
+         <Image
+        src={img3}
+        alt='re'
+        className='
+          h-[14vh]
+          sm:h-[18vh]
+          md:h-[22vh]
+          lg:h-[25vh]
+          w-auto
+          hero-left
+          hero-float
+          object-contain
+        '
+      />
 
-        <button className='
-          bg-black
-          h-[7vh]
-          sm:h-[8vh]
-          md:h-[9vh]
-          lg:h-[10vh]
-          w-[35vw]
-          sm:w-[20vw]
-          md:w-[13vw]
-          lg:w-[10vw]
-          p-2
-          rounded-4xl
-          text-[3vw]
-          sm:text-[2vw]
-          md:text-[1.3vw]
-          lg:text-[10px]
+   <button className='
+        bg-black
+        text-white
+          h-10
+          sm:h-11
+          md:h-10
+          lg:h-10
+          w-32
+          sm:w-36
+          md:w-32
+          lg:w-28
+          px-4
+          rounded-full
+          text-xs
+          sm:text-sm
+          md:text-xs
+          lg:text-[11px]
           cursor-pointer
           hover:bg-white
           hover:text-black
+          hover:border
+          hover:border-black
+          transition-all
+          duration-300
           mt-2
           hero-button
         '>
           Get Started
         </button>
 
-        <Image
-          src={img4}
-          alt='re'
-          className='
-            h-[22vh]
-            sm:h-[27vh]
-            md:h-[32vh]
-            lg:h-[35vh]
-            w-auto
-            object-contain
-            mb-[5vh]
-          '
-        />
+         <Image
+        src={img4}
+        alt='re'
+        className='
+          h-[14vh]
+          sm:h-[18vh]
+          md:h-[22vh]
+          lg:h-[25vh]
+          w-auto
+          hero-left
+          hero-float
+          object-contain
+        '
+      />
 
       </div>
 
