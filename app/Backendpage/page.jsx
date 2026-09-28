@@ -24,12 +24,12 @@ const page = () => {
       <section className="px-[6%] md:px-[11%] bg-white pt-20 md:pt-[100px] pb-10">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="pt-5 md:pt-[50px] w-full md:w-1/2">
-            <h1 className="font-bold text-[32px] md:text-[40px] text-black mb-5 leading-tight">
+            <h1 className="font-bold text-[32px] md:text-[50px] text-black mb-5 leading-tight tracking-widest">
               Become a  <br />
               backend <br />
               professional
             </h1>
-            <p className="text-xs text-gray-600 mb-5">
+            <p className="text-[16px] text-gray-600 mb-5">
               Dive into the Future of Tech Education. Select <br className="hidden md:block" />
               Your Course, Apply Instantly.
             </p>
@@ -456,13 +456,13 @@ const page = () => {
             Explore the unique benefits that set us apart and pave the way for your success.
           </p>
         </div>
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-x-3 gap-y-5 items-start">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-[70px] items-start">
           <div>
             <div className="relative">
               <Image
                 src={faruq}
                 alt="Student"
-                className="w-full h-[220px] object-cover rounded-lg"
+                className="w-full h-[400px] object-cover rounded-lg"
               />
             </div>
             <h3 className="text-black text-xs font-semibold mt-2">
@@ -472,58 +472,58 @@ const page = () => {
               Frontend developer, HTML5 Ecosystem
             </p>
           </div>
-          <div className="pt-5">
+          <div className="pt-10">
             <div className="relative">
-              <Image src={sulyman} alt="Student" className="w-full h-[220px] object-cover rounded-lg" />
+              <Image src={sulyman} alt="Student" className="w-full h-[400px] object-cover rounded-lg" />
             </div>
             <h3 className="text-black text-xs font-semibold mt-2">Bashir Sulyman</h3>
             <p className="text-gray-400 text-[9px] mt-1">Frontend developer, JavaScript</p>
           </div>
-          <div className="pt-10">
+          <div className="pt-20">
             <div className="relative">
-              <Image src={bolu} alt="Student" className="w-full h-[220px] object-cover rounded-lg" />
+              <Image src={bolu} alt="Student" className="w-full h-[400px] object-cover rounded-lg" />
             </div>
             <h3 className="text-black text-xs font-semibold mt-2">Ayanda Boluwatife</h3>
             <p className="text-gray-400 text-[9px] mt-1">Frontend developer, HTML5 Ecosystem</p>
           </div>
           <div>
             <div className="relative">
-              <Image src={faruq2} alt="Student" className="w-full h-[220px] object-cover rounded-lg" />
+              <Image src={faruq2} alt="Student" className="w-full h-[400px] object-cover rounded-lg" />
             </div>
             <h3 className="text-black text-xs font-semibold mt-2">Gbadegesin Farouq</h3>
             <p className="text-gray-400 text-[9px] mt-1">Frontend developer, HTML5 Ecosystem</p>
           </div>
-          <div className="pt-5">
+          <div className="pt-10">
             <div className="relative">
-              <Image src={sulyman2} alt="Student" className="w-full h-[220px] object-cover rounded-lg" />
+              <Image src={sulyman2} alt="Student" className="w-full h-[400px] object-cover rounded-lg" />
             </div>
             <h3 className="text-black text-xs font-semibold mt-2">Bashir Sulyman</h3>
             <p className="text-gray-400 text-[9px] mt-1">Frontend developer, JavaScript</p>
           </div>
-          <div className="pt-10">
+          <div className="pt-20">
             <div className="relative">
-              <Image src={bolu2} alt="Student" className="w-full h-[220px] object-cover rounded-lg" />
+              <Image src={bolu2} alt="Student" className="w-full h-[400px] object-cover rounded-lg" />
             </div>
             <h3 className="text-black text-xs font-semibold mt-2">Ayanda Boluwatife</h3>
             <p className="text-gray-400 text-[9px] mt-1">Frontend developer, HTML5 Ecosystem</p>
           </div>
           <div>
             <div className="relative">
-              <Image src={faruq3} alt="Student" className="w-full h-[220px] object-cover rounded-lg" />
+              <Image src={faruq3} alt="Student" className="w-full h-[400px] object-cover rounded-lg" />
             </div>
             <h3 className="text-black text-xs font-semibold mt-2">Gbadegesin Farouq</h3>
             <p className="text-gray-400 text-[9px] mt-1">Frontend developer, HTML5 Ecosystem</p>
           </div>
-          <div className="pt-5">
+          <div className="pt-10">
             <div className="relative">
-              <Image src={sulyman3} alt="Student" className="w-full h-[220px] object-cover rounded-lg" />
+              <Image src={sulyman3} alt="Student" className="w-full h-[400px] object-cover rounded-lg" />
             </div>
             <h3 className="text-black text-xs font-semibold mt-2">Bashir Sulyman</h3>
             <p className="text-gray-400 text-[9px] mt-1">Frontend developer, JavaScript</p>
           </div>
-          <div className="pt-10">
+          <div className="pt-20">
             <div className="relative">
-              <Image src={bolu3} alt="Student" className="w-full h-[220px] object-cover rounded-lg" />
+              <Image src={bolu3} alt="Student" className="w-full h-[400px] object-cover rounded-lg" />
             </div>
             <h3 className="text-black text-xs font-semibold mt-2">Ayanda Boluwatife</h3>
             <p className="text-gray-400 text-[9px] mt-1">Frontend developer, HTML5 Ecosystem</p>
