@@ -170,7 +170,7 @@ const Hero = () => {
           sm:w-36
           md:w-32
           lg:w-28
-          relative bottom-14
+          md:relative bottom-14
           px-4
           rounded-full
           text-xs
