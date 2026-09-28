@@ -14,7 +14,8 @@ import wordpress from "../../image/tabler-icon-brand-wordpress.png"
 
 const Navbar = () => {
   const [courseOpen, setCourseOpen] = useState(false)
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [resourseOpen, setResourseOpen] = useState(false)
+  const [menuOpen,setMenuOpen]= useState(false)
 
   return (
     <nav className="fixed top-0 z-50 w-full bg-black text-white px-5 md:px-10 lg:px-16 py-4 flex justify-between items-center shadow-2xl">
@@ -46,7 +47,7 @@ const Navbar = () => {
             className="cursor-pointer flex items-center gap-2"
           >
 
-             Course <span>ᵛ</span>
+             Course <span>{courseOpen ? "Λ" : "V"}</span>
           </button>
 
           {courseOpen && (
@@ -99,9 +100,35 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a href="/resources" onClick={() => setMenuOpen(false)}>
-            Resources
+          <a onClick={() => setResourseOpen(!resourseOpen)}>
+            Resources <span>{resourseOpen ? "Λ" : "V"}</span>
           </a>
+          {resourseOpen && (
+
+            <div className="relative md:absolute md:top-12 md:left-1/2 md:-translate-x-1/2 z-50 mt-3 md:mt-0">
+
+              <div className="w-full md:w-[400px] lg:w-[400px] rounded-xl md:rounded-2xl bg-white p-4 md:p-6 shadow-xl">
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+                  <a href="/Frontendpage" className="flex items-center gap-3">
+                    <span className="text-xs md:text-sm text-gray-950">Blog</span>
+                  </a>
+                  <a href="/Backendpage" className="flex items-center gap-3">
+                    <span className="text-xs md:text-sm text-gray-950">Career</span>
+                  </a>
+                  <a href="/#faq" className="flex items-center gap-3">
+                    <span className="text-xs md:text-sm text-gray-950">FAQ</span>
+                  </a>
+                  <a href="/courses/mobile" className="flex items-center gap-3">
+                    <span className="text-xs md:text-sm text-gray-950">Terms and services</span>
+                  </a>
+                  <a href="/courses/python" className="flex items-center gap-3">
+                    <span className="text-xs md:text-sm text-gray-950">Privacy & Policy</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+        )}
         </li>
         <li className="md:hidden">
           <a

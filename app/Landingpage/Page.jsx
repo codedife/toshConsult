@@ -521,7 +521,9 @@ const Page = () => {
             </div>
 
 
-            <button className='
+            <a
+              href="/Frontendpage"
+            className='
               bg-black
               text-white
               px-[5vw]
@@ -541,7 +543,7 @@ const Page = () => {
               md:text-[0.8vw]
             '>
               Get Started
-            </button>
+            </a>
 
           </div>
 
@@ -711,7 +713,9 @@ const Page = () => {
             </div>
 
 
-            <button className='
+            <a
+            href="/Backendpage"
+            className='
               bg-black
               text-white
               px-[5vw]
@@ -731,7 +735,7 @@ const Page = () => {
               md:text-[0.8vw]
             '>
               Get Started
-            </button>
+            </a>
 
           </div>
 
@@ -917,7 +921,9 @@ const Page = () => {
             </div>
 
 
-            <button className='
+            <a
+            href="/Backendpage"
+            className='
               bg-black
               text-white
               px-[5vw]
@@ -937,7 +943,7 @@ const Page = () => {
               md:text-[0.8vw]
             '>
               Get Started
-            </button>
+            </a>
 
           </div>
 
@@ -1105,7 +1111,9 @@ const Page = () => {
             </div>
 
 
-            <button className='
+            <a
+            href="/Backendpage"
+            className='
               bg-black
               text-white
               px-[5vw]
@@ -1125,7 +1133,7 @@ const Page = () => {
               md:text-[0.8vw]
             '>
               Get Started
-            </button>
+            </a>
 
           </div>
 
@@ -1310,7 +1318,9 @@ const Page = () => {
             </div>
 
 
-            <button className='
+            <a 
+            href="/Frontendpage"
+            className='
               bg-black
               text-white
               px-[5vw]
@@ -1330,7 +1340,7 @@ const Page = () => {
               md:text-[0.8vw]
             '>
               Get Started
-            </button>
+            </a>
 
           </div>
 
@@ -2133,6 +2143,7 @@ const Page = () => {
 
 
               <Image
+              id="faq"
                 src={faqOpen ? group4a : group4}
                 alt="faq"
                 className="h-5 w-auto cursor-pointer flex-shrink-0"

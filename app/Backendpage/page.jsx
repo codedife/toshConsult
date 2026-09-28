@@ -49,8 +49,8 @@ const page = () => {
       <section className='px-[11%] py-[30px] bg-white'>
             <div className='grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-[20px]'>
 
-                <div className='bg-white p-[18px] rounded-2xl flex flex-col shadow-[0_0_20px_rgba(0,0,0,0.18)]'>
-                <h1 className='font-bold text-3xl text-black pb-[25px] text-center'>
+                <div className='bg-white p-[15px] rounded-2xl flex flex-col shadow-[0_0_20px_rgba(0,0,0,0.18)]'>
+                <h1 className='font-bold text-3xl text-black pb-[20px] text-center'>
                     400+
                 </h1>
                 <p className='text-[11px] text-gray-600 text-center'>
@@ -58,8 +58,8 @@ const page = () => {
                 </p>
                 </div>
 
-                <div className='bg-white p-[18px] rounded-2xl flex flex-col shadow-[0_0_20px_rgba(0,0,0,0.18)]'>
-                <h1 className='font-bold text-3xl text-black pb-[25px] text-center'>
+                <div className='bg-white p-[15px] rounded-2xl flex flex-col shadow-[0_0_20px_rgba(0,0,0,0.18)]'>
+                <h1 className='font-bold text-3xl text-black pb-[20px] text-center'>
                     10
                 </h1>
                 <p className='text-[11px] text-gray-600 text-center'>
@@ -67,8 +67,8 @@ const page = () => {
                 </p>
                 </div>
 
-                <div className='bg-white p-[18px] rounded-2xl flex flex-col shadow-[0_0_20px_rgba(0,0,0,0.18)]'>
-                <h1 className='font-bold text-3xl text-black pb-[25px] text-center'>
+                <div className='bg-white p-[15px] rounded-2xl flex flex-col shadow-[0_0_20px_rgba(0,0,0,0.18)]'>
+                <h1 className='font-bold text-3xl text-black pb-[20px] text-center'>
                     400+
                 </h1>
                 <p className='text-[11px] text-gray-600 text-center'>
