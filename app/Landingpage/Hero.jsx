@@ -16,8 +16,8 @@ const Hero = () => {
       items-center
       justify-center
       flex-col
-      space-y-[5vh]
-      mt-[8vh]
+      space-y-[20vh]
+      mt-[15vh]
       py-[5vh]
     '>
 
