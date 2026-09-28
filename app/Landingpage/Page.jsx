@@ -1946,120 +1946,54 @@ const Page = () => {
 
 
 
-          <div className='
-            w-[90vw] sm:w-[82vw] md:w-[70vw]
-            h-[38vh] sm:h-[48vh] md:h-[60vh]
-            bg-pink-200
-            rounded-3xl
-            mt-[6vh] md:mt-[8vh]
-            flex flex-col
-            items-center
-            justify-center
-            gap-[3vh] sm:gap-[4vh] md:gap-[5vh]
-            shadow-2xl shadow-pink-300
-            px-[3vw]
-          '>
+          <div className="px-[6%] md:px-[11%] py-12 bg-white">
+        <div className="bg-[#F8E8F8] rounded-[30px] px-8 md:px-16 py-16">
 
-            {/* TOP 3 */}
-
-            <div className='
-              flex flex-row
-              items-center
-              justify-center
-              gap-[2vw] sm:gap-[3vw] md:gap-[2vw]
-              w-full
-            '>
-
-              <Image
-                src={frame43}
-                alt='frame43'
-                className='
-                  w-[25vw] h-auto
-                  sm:w-[20vw]
-                  md:w-[15vw]
-                  max-h-[10vh] sm:max-h-[12vh] md:max-h-[14vh]
-                  object-contain
-                '
-              />
-
-              <Image
-                src={frame42}
-                alt='frame42'
-                className='
-                  w-[25vw] h-auto
-                  sm:w-[20vw]
-                  md:w-[15vw]
-                  max-h-[10vh] sm:max-h-[12vh] md:max-h-[14vh]
-                  object-contain
-                '
-              />
-
-              <Image
-                src={frame41}
-                alt='frame41'
-                className='
-                  w-[25vw] h-auto
-                  sm:w-[20vw]
-                  md:w-[15vw]
-                  max-h-[10vh] sm:max-h-[12vh] md:max-h-[14vh]
-                  object-contain
-                '
-              />
-
+          <div className="flex flex-wrap justify-center items-center gap-8">
+            <div className="bg-white rounded-full px-7 py-7 w-full sm:w-[250px] md:w-[280px] flex items-center gap-3">
+              <div className="w-9 h-9 rounded-full bg-orange-500 flex items-center justify-center text-white">
+              </div>
+              <p className="text-black font-semibold text-sm">
+                Web development
+              </p>
             </div>
-
-
-            {/* BOTTOM 3 */}
-
-            <div className='
-              flex flex-row
-              items-center
-              justify-center
-              gap-[2vw] sm:gap-[3vw] md:gap-[2vw]
-              w-full
-            '>
-
-              <Image
-                src={frame39}
-                alt='frame39'
-                className='
-                  w-[25vw] h-auto
-                  sm:w-[20vw]
-                  md:w-[15vw]
-                  max-h-[10vh] sm:max-h-[12vh] md:max-h-[14vh]
-                  object-contain
-                '
-              />
-
-              <Image
-                src={frame40}
-                alt='frame40'
-                className='
-                  w-[25vw] h-auto
-                  sm:w-[20vw]
-                  md:w-[15vw]
-                  max-h-[10vh] sm:max-h-[12vh] md:max-h-[14vh]
-                  object-contain
-                '
-              />
-
-              <Image
-                src={frame44}
-                alt='frame44'
-                className='
-                  w-[20vw] h-auto
-                  sm:w-[16vw]
-                  md:w-[13vw]
-                  max-h-[8vh] sm:max-h-[10vh] md:max-h-[13vh]
-                  object-contain
-                '
-              />
-
+            <div className="bg-white rounded-full px-7 py-7 w-full sm:w-[250px] md:w-[280px] flex items-center gap-3">
+              <div className="w-9 h-9 rounded-full bg-[#c52bc5] flex items-center justify-center text-white">
+              </div>
+              <p className="text-black font-semibold text-sm">
+                Digital marketing
+              </p>
             </div>
+            <div className="bg-white rounded-full px-7 py-7 w-full sm:w-[250px] md:w-[280px] flex items-center gap-3">
+              <div className="w-9 h-9 rounded-full bg-orange-500 flex items-center justify-center text-white">
+              </div>
+              <p className="text-black font-semibold text-sm">
+                UI/UX design
+              </p>
+            </div>
+            <div className="bg-white rounded-full px-7 py-7 w-full sm:w-[250px] md:w-[280px] flex items-center gap-3">
+              <div className="w-9 h-9 rounded-full bg-[#c52bc5] flex items-center justify-center text-white">
+              </div>
+              <p className="text-black font-semibold text-sm">
+                Software development
+              </p>
+            </div>
+            <div className="bg-white rounded-full px-7 py-7 w-full sm:w-[250px] md:w-[280px] flex items-center gap-3">
+              <div className="w-9 h-9 rounded-full bg-orange-500 flex items-center justify-center text-white">
+              </div>
+              <p className="text-black font-semibold text-sm">
+                Mobile app development
+              </p>
+            </div>
+            <button className="bg-black text-white rounded-[30px] w-[100px] h-[85px] text-sm font-medium leading-tight">
+              Reach<br />
+              Out
+            </button>
 
           </div>
 
-
+        </div>
+      </div>
       <div className='w-[88vw] sm:w-[70vw] md:w-[35vw] flex flex-col space-y-5 mt-14 md:mt-16'>
 
         <p className='text-[24px] sm:text-[28px] md:text-[30px] text-black font-extrabold text-center leading-tight'>
