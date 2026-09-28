@@ -16,8 +16,8 @@ const Hero = () => {
       items-center
       justify-center
       flex-col
-      space-y-[5vh]
-      mt-[8vh]
+      space-y-[10vh]
+      mt-[10vh]
       py-[5vh]
     '>
 
@@ -31,7 +31,6 @@ const Hero = () => {
         w-[90vw]
         md:w-[80vw]
         lg:w-[70vw]
-        mt-[5vh]
         gap-[5vh]
         md:gap-[2vw]
       '>
@@ -60,6 +59,7 @@ const Hero = () => {
           md:w-[40vw]
           lg:w-[35vw]
           h-auto
+          md:mt-16
           space-y-[2vh]
           hero-content
         '>
@@ -86,7 +86,7 @@ const Hero = () => {
             text-center
             text-black
             font-extrabold
-            leading-tight
+            leading-14
           '>
             Where Tech Dreams <br/>
             Take Flight!
@@ -96,6 +96,7 @@ const Hero = () => {
             text-[3vw]
             sm:text-[2.2vw]
             md:text-[1.5vw]
+            md:mt-3
             lg:text-[12px]
             text-center
             text-black
@@ -169,6 +170,7 @@ const Hero = () => {
           sm:w-36
           md:w-32
           lg:w-28
+          md:relative bottom-14
           px-4
           rounded-full
           text-xs
@@ -182,7 +184,6 @@ const Hero = () => {
           hover:border-black
           transition-all
           duration-300
-          mt-2
           hero-button
         '>
           Get Started

@@ -99,7 +99,7 @@ const Navbar = () => {
             Student project
           </a>
         </li>
-        <li>
+        <li className="cursor-pointer">
           <a onClick={() => setResourseOpen(!resourseOpen)}>
             Resources <span>{resourseOpen ? "Λ" : "V"}</span>
           </a>
