@@ -479,3 +479,415 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+
+/* ================================
+   3D HERO BACKGROUND
+================================ */
+
+.hero-3d-scene {
+  perspective: 1200px;
+  overflow: hidden;
+}
+
+
+/* ================================
+   3D FLOATING IMAGES
+================================ */
+
+.hero-3d-image {
+  position: relative;
+  z-index: 20;
+
+  display: block;
+
+  transform-style: preserve-3d;
+  transform-origin: center center;
+
+  animation: hero3DFloat 5s ease-in-out infinite;
+
+  transition:
+    transform 0.5s ease,
+    filter 0.5s ease;
+
+  filter: drop-shadow(0 15px 12px rgba(0, 0, 0, 0.12));
+
+  will-change: transform;
+}
+
+
+/* ================================
+   IMAGE HOVER
+================================ */
+
+.hero-3d-image:hover {
+  animation-play-state: paused;
+
+  transform:
+    perspective(1000px)
+    rotateX(8deg)
+    rotateY(-10deg)
+    translateZ(20px)
+    scale(1.05);
+
+  filter:
+    drop-shadow(10px 20px 15px rgba(0, 0, 0, 0.2));
+}
+
+
+/* ================================
+   DIFFERENT FLOATING DELAYS
+================================ */
+
+.hero-3d-image-one {
+  animation-delay: 0s;
+}
+
+.hero-3d-image-two {
+  animation-delay: 1s;
+}
+
+.hero-3d-image-three {
+  animation-delay: 2s;
+}
+
+.hero-3d-image-four {
+  animation-delay: 3s;
+}
+
+
+/* ================================
+   FLOATING ANIMATION
+================================ */
+
+@keyframes hero3DFloat {
+
+  0% {
+    transform:
+      translate3d(0, 0, 0)
+      rotateX(0deg)
+      rotateY(-3deg);
+  }
+
+  25% {
+    transform:
+      translate3d(0, -10px, 10px)
+      rotateX(3deg)
+      rotateY(3deg);
+  }
+
+  50% {
+    transform:
+      translate3d(0, -18px, 15px)
+      rotateX(-3deg)
+      rotateY(5deg);
+  }
+
+  75% {
+    transform:
+      translate3d(0, -8px, 8px)
+      rotateX(3deg)
+      rotateY(-3deg);
+  }
+
+  100% {
+    transform:
+      translate3d(0, 0, 0)
+      rotateX(0deg)
+      rotateY(-3deg);
+  }
+}
+
+
+/* ================================
+   CENTER CONTENT
+================================ */
+
+.hero-3d-content {
+  position: relative;
+  z-index: 30;
+
+  transform-style: preserve-3d;
+
+  animation:
+    hero3DEntrance
+    1.3s
+    ease-out
+    both;
+}
+
+
+@keyframes hero3DEntrance {
+
+  0% {
+    opacity: 0;
+
+    transform:
+      translateY(40px)
+      translateZ(0)
+      rotateX(8deg);
+  }
+
+  100% {
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      translateZ(0)
+      rotateX(0deg);
+  }
+}
+
+
+/* ================================
+   LOGO
+================================ */
+
+.hero-3d-logo {
+  position: relative;
+  z-index: 40;
+
+  display: block;
+
+  transform-style: preserve-3d;
+
+  animation:
+    logoFloat3D
+    4s
+    ease-in-out
+    infinite;
+
+  transition:
+    transform 0.5s ease;
+}
+
+
+.hero-3d-logo:hover {
+  animation-play-state: paused;
+
+  transform:
+    rotateY(10deg)
+    rotateX(5deg)
+    translateZ(20px);
+}
+
+
+@keyframes logoFloat3D {
+
+  0%,
+  100% {
+    transform:
+      translateY(0)
+      rotateY(-2deg);
+  }
+
+  50% {
+    transform:
+      translateY(-6px)
+      rotateY(2deg);
+  }
+}
+
+
+/* ================================
+   HEADING
+================================ */
+
+.hero-3d-heading {
+  position: relative;
+  z-index: 40;
+
+  text-shadow:
+    1px 1px 0 rgba(0, 0, 0, 0.1),
+    2px 2px 0 rgba(0, 0, 0, 0.08),
+    4px 4px 10px rgba(0, 0, 0, 0.12);
+
+  transform: translateZ(15px);
+}
+
+
+/* ================================
+   DESCRIPTION
+================================ */
+
+.hero-3d-description {
+  position: relative;
+  z-index: 40;
+
+  animation:
+    descriptionEntrance
+    1.5s
+    ease-out
+    both;
+
+  animation-delay: 0.3s;
+}
+
+
+@keyframes descriptionEntrance {
+
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(20px)
+      translateZ(0);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      translateZ(0);
+  }
+}
+
+
+/* ================================
+   BUTTON
+================================ */
+
+.hero-3d-button {
+  position: relative;
+  z-index: 50;
+
+  transform-style: preserve-3d;
+
+  box-shadow:
+    0 6px 0 #555,
+    0 12px 20px rgba(0, 0, 0, 0.18);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+/* ================================
+   BUTTON HOVER
+================================ */
+
+.hero-3d-button:hover {
+  transform:
+    translateY(-6px)
+    translateZ(15px)
+    rotateX(5deg);
+
+  box-shadow:
+    0 10px 0 #555,
+    0 18px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ================================
+   BUTTON CLICK
+================================ */
+
+.hero-3d-button:active {
+  transform:
+    translateY(2px);
+
+  box-shadow:
+    0 2px 0 #555,
+    0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+  .hero-3d-scene {
+    perspective: 800px;
+  }
+
+  .hero-3d-image {
+    animation-duration: 6s;
+  }
+
+  .hero-3d-image:hover {
+    transform:
+      rotateX(5deg)
+      rotateY(-5deg)
+      translateZ(10px)
+      scale(1.03);
+  }
+
+  .hero-3d-heading {
+    transform: translateZ(5px);
+  }
+}
+
+
+/* ================================
+   ACCESSIBILITY
+================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .hero-3d-image,
+  .hero-3d-content,
+  .hero-3d-logo,
+  .hero-3d-description,
+  .hero-3d-button {
+    animation: none;
+    transition: none;
+  }
+}
+
+
+.hero-3d-image {
+  position: relative;
+  z-index: 20;
+
+  display: block;
+
+  transform-style: preserve-3d;
+  transform-origin: center center;
+
+  /* STOP BOUNCING */
+  animation: none;
+
+  transition:
+    transform 0.5s ease,
+    filter 0.5s ease;
+
+  filter: drop-shadow(0 15px 12px rgba(0, 0, 0, 0.12));
+
+  will-change: transform;
+}
+
+
+.hero-3d-image {
+  position: relative;
+  z-index: 20;
+  display: block;
+
+  transform-style: preserve-3d;
+  transform-origin: center center;
+
+  animation: none;
+
+  transition:
+    transform 0.3s ease,
+    filter 0.5s ease;
+
+  filter: drop-shadow(0 15px 12px rgba(0, 0, 0, 0.12));
+}
+
+.hero-3d-image:hover {
+  transform:
+    perspective(1000px)
+    rotateY(360deg)
+    scale(1.05);
+
+  filter:
+    drop-shadow(10px 20px 15px rgba(0, 0, 0, 0.2));
+
+  transition:
+    transform 3.5s ease-in-out,
+    filter 0.5s ease;
+}
