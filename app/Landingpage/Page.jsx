@@ -80,6 +80,54 @@ const Page = () => {
                   shrink-0
                 "
               />
+              <Image
+                src={brand}
+                alt="brand"
+                className="
+                  h-auto
+                  w-[85vw]
+                  sm:w-[70vw]
+                  md:w-[50vw]
+                  shrink-0
+                "
+              />
+              <Image
+                src={brand}
+                alt="brand"
+                className="
+                  h-auto
+                  w-[85vw]
+                  sm:w-[70vw]
+                  md:w-[50vw]
+                  shrink-0
+                "
+              />
+              <Image
+                src={brand}
+                alt="brand"
+                className="
+                  h-auto
+                  w-[85vw]
+                  sm:w-[70vw]
+                  md:w-[50vw]
+                  shrink-0
+                "
+              />
+              <Image
+                src={brand}
+                alt="brand"
+                className="
+                  h-auto
+                  w-[85vw]
+                  sm:w-[70vw]
+                  md:w-[50vw]
+                  shrink-0
+                "
+              />
+
+
+ 
+
 
             </div>
           </div>

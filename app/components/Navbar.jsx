@@ -10,6 +10,7 @@ import mobile from "../../image/tabler-icon-versions.png"
 import python from "../../image/tabler-icon-brand-python.png"
 import javascript from "../../image/tabler-icon-brand-javascript.png"
 import wordpress from "../../image/tabler-icon-brand-wordpress.png"
+import icon from "../../image/tabler-icon-chevron-down.png"
 
 
 const Navbar = () => {
@@ -47,7 +48,7 @@ const Navbar = () => {
             className="cursor-pointer flex items-center gap-2"
           >
 
-             Course <span>{courseOpen ? "Λ" : "V"}</span>
+             Course <Image src={icon} alt="icon"/>
           </button>
 
           {courseOpen && (
@@ -100,8 +101,9 @@ const Navbar = () => {
           </a>
         </li>
         <li className="cursor-pointer">
-          <a onClick={() => setResourseOpen(!resourseOpen)}>
-            Resources <span>{resourseOpen ? "Λ" : "V"}</span>
+          <a className="flex gap-1" onClick={() => setResourseOpen(!resourseOpen)}>
+            Resources
+            <Image src={icon} alt="icon"/>
           </a>
           {resourseOpen && (
 

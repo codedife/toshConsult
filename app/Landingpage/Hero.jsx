@@ -1,3 +1,6 @@
+
+"use client"
+
 import React from 'react'
 import Image from "next/image"
 import img1 from "../../image/Rectangle 3 (1).png"
@@ -19,6 +22,9 @@ const Hero = () => {
       space-y-[10vh]
       mt-[10vh]
       py-[5vh]
+      relative
+      overflow-hidden
+      hero-3d-scene
     '>
 
       {/* TOP SECTION */}
@@ -33,21 +39,24 @@ const Hero = () => {
         lg:w-[70vw]
         gap-[5vh]
         md:gap-[2vw]
+        relative
+        z-10
       '>
-      <Image
-        src={img1}
-        alt='re'
-        className='
-          h-[14vh]
-          sm:h-[18vh]
-          md:h-[22vh]
-          lg:h-[25vh]
-          w-auto
-          hero-left
-          hero-float
-          object-contain
-        '
-      />
+
+        <Image
+          src={img1}
+          alt='Tech illustration'
+          className='
+            h-[14vh]
+            sm:h-[18vh]
+            md:h-[22vh]
+            lg:h-[25vh]
+            w-auto
+            hero-3d-image
+            hero-3d-image-one
+            object-contain
+          '
+        />
 
         <div className='
           flex
@@ -62,11 +71,12 @@ const Hero = () => {
           md:mt-16
           space-y-[2vh]
           hero-content
+          hero-3d-content
         '>
 
           <Image
             src={tosh}
-            alt='re'
+            alt='Tosh logo'
             className='
               h-auto
               w-[30vw]
@@ -74,6 +84,7 @@ const Hero = () => {
               md:w-[18vw]
               lg:w-[15vw]
               object-contain
+              hero-3d-logo
             '
           />
 
@@ -87,6 +98,7 @@ const Hero = () => {
             text-black
             font-extrabold
             leading-14
+            hero-3d-heading
           '>
             Where Tech Dreams <br/>
             Take Flight!
@@ -102,6 +114,7 @@ const Hero = () => {
             text-black
             max-w-[80vw]
             md:max-w-[35vw]
+            hero-3d-description
           '>
             Dive into the Future of Tech Education. Select Your Course, Apply Instantly, <br/>
             and Let's Begin the Transformation Journey Together!
@@ -109,21 +122,20 @@ const Hero = () => {
 
         </div>
 
-      <Image
-        src={img2}
-        alt='re'
-        className='
-          h-[14vh]
-          sm:h-[18vh]
-          md:h-[22vh]
-          lg:h-[25vh]
-          w-auto
-          hero-left
-          hero-float
-          object-contain
-        '
-      />
-
+        <Image
+          src={img2}
+          alt='Tech illustration'
+          className='
+            h-[14vh]
+            sm:h-[18vh]
+            md:h-[22vh]
+            lg:h-[25vh]
+            w-auto
+            hero-3d-image
+            hero-3d-image-two
+            object-contain
+          '
+        />
 
       </div>
 
@@ -142,26 +154,28 @@ const Hero = () => {
         gap-[4vh]
         sm:gap-[2vw]
         hero-bottom
+        relative
+        z-10
       '>
 
-         <Image
-        src={img3}
-        alt='re'
-        className='
-          h-[14vh]
-          sm:h-[18vh]
-          md:h-[22vh]
-          lg:h-[25vh]
-          w-auto
-          hero-left
-          hero-float
-          object-contain
-        '
-      />
+        <Image
+          src={img3}
+          alt='Tech illustration'
+          className='
+            h-[14vh]
+            sm:h-[18vh]
+            md:h-[22vh]
+            lg:h-[25vh]
+            w-auto
+            hero-3d-image
+            hero-3d-image-three
+            object-contain
+          '
+        />
 
-   <button className='
-        bg-black
-        text-white
+        <button className='
+          bg-black
+          text-white
           h-10
           sm:h-11
           md:h-10
@@ -170,7 +184,8 @@ const Hero = () => {
           sm:w-36
           md:w-32
           lg:w-28
-          md:relative bottom-14
+          relative
+          md:bottom-14
           px-4
           rounded-full
           text-xs
@@ -185,24 +200,25 @@ const Hero = () => {
           transition-all
           duration-300
           hero-button
+          hero-3d-button
         '>
           Get Started
         </button>
 
-         <Image
-        src={img4}
-        alt='re'
-        className='
-          h-[14vh]
-          sm:h-[18vh]
-          md:h-[22vh]
-          lg:h-[25vh]
-          w-auto
-          hero-left
-          hero-float
-          object-contain
-        '
-      />
+        <Image
+          src={img4}
+          alt='Tech illustration'
+          className='
+            h-[14vh]
+            sm:h-[18vh]
+            md:h-[22vh]
+            lg:h-[25vh]
+            w-auto
+            hero-3d-image
+            hero-3d-image-four
+            object-contain
+          '
+        />
 
       </div>
 
