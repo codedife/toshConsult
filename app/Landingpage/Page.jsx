@@ -12,16 +12,17 @@ import group23 from '../../image/Group 23.png'
 import group18 from '../../image/Group 18.png'
 import thick from '../../image/tabler-icon-circle-check-filled.png'
 
-import frame44 from '../../image/Frame 44.png'
-import frame43 from '../../image/Frame 43.png'
-import frame42 from '../../image/Frame 42.png'
-import frame41 from '../../image/Frame 41.png'
-import frame40 from '../../image/Frame 40.png'
-import frame39 from '../../image/Frame 39.png'
+
+import webdevelopment from '../../image/Group 24.png'
+import digitalmarketing from '../../image/Group 29.png'
+import uiux from '../../image/Group 26.png'
+import softwaredevelopment from '../../image/Group 28.png'
+import mobiledevelopment from '../../image/Group 27.png'
 import frame47 from '../../image/Frame 47.png'
 
 import group4 from '../../image/Group 4.png'
 import group4a from '../../image/Group 4 (1).png'
+import { form } from "motion/react-client"
 
 
 const Page = () => {
@@ -1991,121 +1992,139 @@ const Page = () => {
         </p>
 
       </div>
+      
+      <div className="bg-[#F8E8F8] rounded-[30px] flex flex-col items-center justify-center mt-10
+        h-auto min-h-[60vh] w-[92vw]
+        sm:w-[90vw]
+        md:w-[85vw]
+        lg:w-[70vw]
+        px-4 sm:px-6 md:px-8
+        py-10 sm:py-12 md:py-14">
+
+        {/* TOP 3 */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3
+          gap-4 sm:gap-5 mb-5 w-full
+          justify-items-center">
+
+          <button className="bg-white rounded-[18px] h-24
+            w-full
+            sm:w-[40vw]
+            md:w-[25vw]
+            lg:w-[20vw]
+            flex justify-center items-center gap-3">
+
+            <Image
+              src={webdevelopment}
+              alt="Web development"
+              className="w-9 h-9 object-contain"
+            />
+
+            <p className="text-black font-semibold text-sm">
+              Web development
+            </p>
+          </button>
 
 
+          <button className="bg-white rounded-[18px] h-24
+            w-full
+            sm:w-[40vw]
+            md:w-[25vw]
+            lg:w-[20vw]
+            flex justify-center items-center gap-3">
 
-          <div className='
-            w-[90vw] sm:w-[82vw] md:w-[70vw]
-            h-[38vh] sm:h-[48vh] md:h-[60vh]
-            bg-pink-200
-            rounded-3xl
-            mt-[6vh] md:mt-[8vh]
-            flex flex-col
-            items-center
-            justify-center
-            gap-[3vh] sm:gap-[4vh] md:gap-[5vh]
-            shadow-2xl shadow-pink-300
-            px-[3vw]
-          '>
+            <Image
+              src={digitalmarketing}
+              alt="Digital marketing"
+              className="w-9 h-9 object-contain"
+            />
 
-            {/* TOP 3 */}
-
-            <div className='
-              flex flex-row
-              items-center
-              justify-center
-              gap-[2vw] sm:gap-[3vw] md:gap-[2vw]
-              w-full
-            '>
-
-              <Image
-                src={frame43}
-                alt='frame43'
-                className='
-                  w-[25vw] h-auto
-                  sm:w-[20vw]
-                  md:w-[15vw]
-                  max-h-[10vh] sm:max-h-[12vh] md:max-h-[14vh]
-                  object-contain
-                '
-              />
-
-              <Image
-                src={frame42}
-                alt='frame42'
-                className='
-                  w-[25vw] h-auto
-                  sm:w-[20vw]
-                  md:w-[15vw]
-                  max-h-[10vh] sm:max-h-[12vh] md:max-h-[14vh]
-                  object-contain
-                '
-              />
-
-              <Image
-                src={frame41}
-                alt='frame41'
-                className='
-                  w-[25vw] h-auto
-                  sm:w-[20vw]
-                  md:w-[15vw]
-                  max-h-[10vh] sm:max-h-[12vh] md:max-h-[14vh]
-                  object-contain
-                '
-              />
-
-            </div>
+            <p className="text-black font-semibold text-sm">
+              Digital marketing
+            </p>
+          </button>
 
 
-            {/* BOTTOM 3 */}
+          <button className="bg-white rounded-[18px] h-24
+            w-full
+            sm:w-[40vw]
+            md:w-[25vw]
+            lg:w-[20vw]
+            flex justify-center items-center gap-3">
 
-            <div className='
-              flex flex-row
-              items-center
-              justify-center
-              gap-[2vw] sm:gap-[3vw] md:gap-[2vw]
-              w-full
-            '>
+            <Image
+              src={uiux}
+              alt="UI UX design"
+              className="w-9 h-9 object-contain"
+            />
 
-              <Image
-                src={frame39}
-                alt='frame39'
-                className='
-                  w-[25vw] h-auto
-                  sm:w-[20vw]
-                  md:w-[15vw]
-                  max-h-[10vh] sm:max-h-[12vh] md:max-h-[14vh]
-                  object-contain
-                '
-              />
+            <p className="text-black font-semibold text-sm">
+              UI/UX design
+            </p>
+          </button>
 
-              <Image
-                src={frame40}
-                alt='frame40'
-                className='
-                  w-[25vw] h-auto
-                  sm:w-[20vw]
-                  md:w-[15vw]
-                  max-h-[10vh] sm:max-h-[12vh] md:max-h-[14vh]
-                  object-contain
-                '
-              />
+        </div>
 
-              <Image
-                src={frame44}
-                alt='frame44'
-                className='
-                  w-[20vw] h-auto
-                  sm:w-[16vw]
-                  md:w-[13vw]
-                  max-h-[8vh] sm:max-h-[10vh] md:max-h-[13vh]
-                  object-contain
-                '
-              />
 
-            </div>
+        {/* BOTTOM */}
+        <div className="flex flex-col sm:flex-row
+          items-center justify-center
+          gap-4 sm:gap-5 md:gap-6
+          w-full">
 
-          </div>
+          {/* SOFTWARE */}
+          <button className="bg-white rounded-[25px] h-24
+            w-full
+            sm:w-[40vw]
+            md:w-[30vw]
+            lg:w-[25vw]
+            flex justify-center items-center gap-3">
+
+            <Image
+              src={softwaredevelopment}
+              alt="Software development"
+              className="w-10 h-10 object-contain"
+            />
+
+            <p className="text-black font-semibold text-[14px]">
+              Software development
+            </p>
+          </button>
+
+
+          {/* MOBILE */}
+          <button className="bg-white rounded-[25px] h-24
+            w-full
+            sm:w-[40vw]
+            md:w-[30vw]
+            lg:w-[25vw]
+            flex justify-center items-center gap-3">
+
+            <Image
+              src={mobiledevelopment}
+              alt="Mobile app development"
+              className="w-10 h-10 object-contain"
+            />
+
+            <p className="text-black font-semibold text-[14px]">
+              Mobile app development
+            </p>
+          </button>
+
+
+          {/* REACH OUT */}
+          <button className="bg-black text-white rounded-[35px]
+            w-[120px] h-[87px]
+            text-sm font-semibold leading-tight
+            shrink-0">
+
+            Reach<br />
+            Out
+
+          </button>
+
+        </div>
+
+      </div>
 
 
       <div className='w-[88vw] sm:w-[70vw] md:w-[35vw] flex flex-col space-y-5 mt-14 md:mt-16'>
